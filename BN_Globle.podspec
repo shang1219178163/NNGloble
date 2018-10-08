@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BN_Globle"
-  s.version      = "1.1.1"
+  s.version      = "1.0.0"
   s.summary      = "Macro,Const.AppKey."
   s.description  = <<-DESC
                     基础宏,常量值,第三方appKey配置
@@ -19,8 +19,11 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/shang1219178163/BN_Globle.git", :tag => "#{s.version}" }
 
-  s.source_files = "Classes/*"
-  s.public_header_files = "Classes/*.h"
+  # s.source_files  = "BN_Globle/*"
+  # s.public_header_files = "BN_Globle/BN_Globle.h"
+
+  s.source_files = "BN_Globle/*"
+  s.public_header_files = "BN_Globle/*.h"
 
 
   s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
