@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
   # s.source_files  = "BN_Globle/*"
   # s.public_header_files = "BN_Globle/BN_Globle.h"
 
-  s.source_files = "BN_Globle/**/*.{h,m}"
-   s.public_header_files = "BN_Globle/**/BN_Globle.h"
+  s.source_files = "BN_Globle/*.{h,m}"
+  s.public_header_files = "BN_Globle/BN_Globle.h"
 
 
   s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
