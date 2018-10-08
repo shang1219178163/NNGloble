@@ -19,9 +19,6 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/shang1219178163/BN_Globle.git", :tag => "#{s.version}" }
 
-  # s.source_files  = "BN_Globle/*"
-  # s.public_header_files = "BN_Globle/BN_Globle.h"
-
   s.source_files = "Classes/*"
   s.public_header_files = "Classes/*.h"
 
