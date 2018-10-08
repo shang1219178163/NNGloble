@@ -15,7 +15,7 @@
 #define kString_AgreementURL = @"";
 
 
-#define kID_AppStoreConnect     @"1361888556"
+#define kID_AppStoreConnect     @""
 
 #pragma mark - -极光
 
@@ -80,9 +80,9 @@
 /**
  身份证识别
  */
-#define kRecognizeCard_AppKey      @"23761697";
-#define kRecognizeCard_AppSecret   @"03e4b23947f8b8d7c2a9203b0a227757";
-#define kRecognizeCard_AppCode     @"ac1da2eec40448d5b05a732bb6531d18";
+#define kRecognizeCard_AppKey      @"";
+#define kRecognizeCard_AppSecret   @"";
+#define kRecognizeCard_AppCode     @"";
 
 
 #endif /* BN_GlobleKey_h */

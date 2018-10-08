@@ -11,11 +11,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "BN_AttributedStringKey.h"
 #import "BN_Marco.h"
 #import "BN_GlobleKey.h"
-#import "BN_GeneralConst.h"
 #import "BN_Shared.h"
+#import "BN_GeneralConst.h"
+#import "BN_AttributedStringKey.h"
 
 
 #endif /* BN_Globle_h */
