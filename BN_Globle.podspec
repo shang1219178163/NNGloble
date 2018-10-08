@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BN_Globle"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "Macro,Const.AppKey."
   s.description  = <<-DESC
                     基础宏,常量值,第三方appKey配置
@@ -11,9 +11,7 @@ Pod::Spec.new do |s|
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
-
   s.author       = { "BIN" => "shang1219178163@gmail.com" }
-
 
   s.platform     = :ios, '9.0'
   s.ios.deployment_target = '9.0'
@@ -24,8 +22,8 @@ Pod::Spec.new do |s|
   # s.source_files  = "BN_Globle/*"
   # s.public_header_files = "BN_Globle/BN_Globle.h"
 
-  s.source_files = "BN_Globle/*"
-  s.public_header_files = "BN_Globle/BN_Globle.h"
+  s.source_files = "Classes/*"
+  s.public_header_files = "Classes/*.h"
 
 
   s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
