@@ -1,5 +1,5 @@
 //
-//  BN_AttributedStringKey.h
+//  BN_AttStringKey.h
 //  ProductTemplet
 //
 //  Created by hsf on 2018/8/30.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BN_AttributedStringKey : NSObject
+@interface BN_AttStringKey : NSObject
 
 +(NSString *)obj;
 

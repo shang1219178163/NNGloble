@@ -6,9 +6,9 @@
 //  Copyright © 2018年 BN. All rights reserved.
 //
 
-#import "BN_AttributedStringKey.h"
+#import "BN_AttStringKey.h"
 
-@implementation BN_AttributedStringKey
+@implementation BN_AttStringKey
 
 +(NSString *)obj{
     return NSStringFromSelector(_cmd);
