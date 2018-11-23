@@ -142,6 +142,8 @@ UIKIT_EXTERN NSString * const kActionTitle_Recover;
 #pragma mark - - 通用
 
 UIKIT_EXTERN NSString * const kDes_week ;
+UIKIT_EXTERN NSString * const kDes_month ;
+UIKIT_EXTERN NSString * const kDes_day ;
 
 UIKIT_EXTERN NSString * const kItem_obj ;
 UIKIT_EXTERN NSString * const kItem_objSeleted ;
