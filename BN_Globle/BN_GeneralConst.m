@@ -68,9 +68,11 @@ const CGFloat kW_LayerBorder = 0.5;
 const CGFloat kWH_ArrowRight = 25;
 const CGFloat kTimerValue = 65;
 const CGFloat kRatio_IDCard = 1.58;
-const CGFloat kAnimationDuration_Toast = 1.0;
-const CGFloat kAnimationDuration_Drop = 0.5;
-const CGFloat kLeftMenuRatio = 0.8;
+const CGFloat kRatio_LeftMenu = 0.8;
+
+const CGFloat kAnimDuration = 0.3;
+const CGFloat kAnimDuration_Toast = 1.0;
+const CGFloat kAnimDuration_Drop = 0.5;
 
 const CGFloat kW_item = 80;
 const CGFloat kW_progressView = 130;
