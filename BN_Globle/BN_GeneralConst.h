@@ -42,6 +42,11 @@ UIKIT_EXTERN const NSInteger kTAG_UItableViewCell ;
 UIKIT_EXTERN const NSInteger kTAG_ICAROUSEL ;
 UIKIT_EXTERN const NSInteger kTAG_PAGE_CONTROL ;
 
+UIKIT_EXTERN const NSInteger kComponent_0 ;
+UIKIT_EXTERN const NSInteger kComponent_1 ;
+UIKIT_EXTERN const NSInteger kComponent_2 ;
+
+
 #pragma mark - -MacroGeometry与计算有关的尺寸属性
 
 UIKIT_EXTERN const CGFloat kH_StatusBar ;

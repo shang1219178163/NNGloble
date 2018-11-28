@@ -43,6 +43,10 @@ const NSInteger kTAG_UItableViewCell = 1500;
 const NSInteger kTAG_ICAROUSEL = 950;
 const NSInteger kTAG_PAGE_CONTROL = 951;
 
+const NSInteger kComponent_0 = 0 ;
+const NSInteger kComponent_1 = 1 ;
+const NSInteger kComponent_2 = 2 ;
+
 #pragma mark - -MacroGeometry与计算有关的尺寸属性
 
 const CGFloat kH_StatusBar = 20;
