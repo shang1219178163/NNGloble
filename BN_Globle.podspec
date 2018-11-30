@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BN_Globle"
-  s.version      = "1.2.4"
+  s.version      = "1.2.5"
   s.summary      = "Macro,Const.AppKey."
   s.description  = <<-DESC
                     基础宏,常量值,第三方appKey配置
@@ -21,9 +21,10 @@ Pod::Spec.new do |s|
 
   s.source_files = "BN_Globle/*"
   s.public_header_files = "BN_Globle/*.h"
-
-  s.resources = "BN_Globle/Resources/*.png"
-
+  s.resource_bundles = {
+    'BN_Globle' => ['BN_Globle/Resources/*.xcassets']
+  }
+  
   s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage',
     'CoreLocation','CoreTelephony', 'GLKit','QuartzCore', 'ImageIO','Accelerate',
     'AssetsLibrary', 'MobileCoreServices', 'SystemConfiguration','ImageIO',
