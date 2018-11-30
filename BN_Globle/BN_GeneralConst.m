@@ -100,31 +100,42 @@ const CGFloat kFZ_Fifth =  10;
 
 #pragma mark - -视图
 
-NSString * const kIMAGE_arrowRight = @"img_arrowRight_gray.png";
-NSString * const kIMAGE_arrowDown = @"img_arrowDown_black.png";
-NSString * const kIMAGE_arrowBack = @"img_arrowLeft_white.png";
+NSString * const kIMG_arrowRight = @"img_arrowRight_gray";
+NSString * const kIMG_arrowDown = @"img_arrowDown_black";
+NSString * const kIMG_arrowBack = @"img_arrowLeft_white";
 
-NSString * const kIMAGE_default_User = @"img_portrait_Default.png";
-NSString * const kIMAGE_default_User_N = @"img_headPortrait_N.png";
-NSString * const kIMAGE_default_User_H = @"img_headPortrait_H.png";
-NSString * const kIMAGE_defaultAddPhoto = @"img_photoAddDefault.png";
-NSString * const kIMAGE_photoDelete = @"img_Picture_Delete.png";
+NSString * const kIMG_portrait = @"img_portrait_N";
+NSString * const kIMG_portrait_N = @"img_portrait_N";
+NSString * const kIMG_portrait_H = @"img_portrait_H";
+NSString * const kIMG_pictureAdd = @"img_pictureAdd";
+NSString * const kIMG_pictureDelete = @"img_pictureDelete";
 
-NSString * const kIMAGE_default_failed = @"imageFailedDefault.png";
-NSString * const kIMAGE_default_failed_S = @"imageFailedDefault_S.png";
+NSString * const kIMG_defaultFailed = @"img_failedDefault";
+NSString * const kIMG_defaultFailed_S = @"img_failedDefault_S";
 
-NSString * const kIMAGE_SexBoy = @"img_sex_boy.png";
-NSString * const kIMAGE_SexGril = @"img_sex_gril.png";
+NSString * const kIMG_sexBoy = @"img_sex_boy";
+NSString * const kIMG_sexGril = @"img_sex_gril";
 
-NSString * const kIMAGE_elemetDecrease = @"decrease_elemet";
-NSString * const kIMAGE_elemetIncrease = @"increase_elemet";
+NSString * const kIMG_elemetDec = @"img_elemet_decrease";
+NSString * const kIMG_elemetInc = @"img_elemet_increase";
 
-NSString * const kIMAGE_scan = @"img_scan.png";
-NSString * const kIMAGE_NFC = @"img_NFC.png";
-NSString * const kIMAGE_update = @"img_dialog_update";
-NSString * const kIMAGE_inquiry = @"img_dialog_inquiry";
-NSString * const kIMAGE_warning = @"img_dialog_warning";
+NSString * const kIMG_scan = @"img_scan";
+NSString * const kIMG_NFC = @"img_NFC";
 
+NSString * const kIMG_inquiry = @"img_dialog_inquiry";
+NSString * const kIMG_update = @"img_dialog_update";
+NSString * const kIMG_warning = @"img_dialog_warning";
+
+NSString * const kIMG_notice = @"img_notice";
+NSString * const kIMG_location_H = @"img_location_H";
+NSString * const kIMG_more = @"img_more";
+
+NSString * const kIMG_selected_NO = @"btn_selected_NO";
+NSString * const kIMG_selected_YES = @"btn_selected_YES";
+NSString * const kIMG_Add = @"btn_add";
+
+NSString * const kIMG_like_H = @"img_like_H";
+NSString * const kIMG_like_W = @"img_like_W";
 
 NSString * const kMsg_NetWorkRequesting = @"网络请求中...";
 NSString * const kMsg_NetWorkFailed = @"网络请求失败,请稍后再试";

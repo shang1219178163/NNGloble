@@ -97,30 +97,42 @@ UIKIT_EXTERN const CGFloat kFZ_Fifth ;
 
 #pragma mark - -视图
 
-UIKIT_EXTERN NSString * const kIMAGE_arrowRight;
-UIKIT_EXTERN NSString * const kIMAGE_arrowDown;
-UIKIT_EXTERN NSString * const kIMAGE_arrowBack;
+UIKIT_EXTERN NSString * const kIMG_arrowRight ;
+UIKIT_EXTERN NSString * const kIMG_arrowDown ;
+UIKIT_EXTERN NSString * const kIMG_arrowBack ;
 
-UIKIT_EXTERN NSString * const kIMAGE_default_User;
-UIKIT_EXTERN NSString * const kIMAGE_default_User_N;
-UIKIT_EXTERN NSString * const kIMAGE_default_User_H;
-UIKIT_EXTERN NSString * const kIMAGE_defaultAddPhoto;
-UIKIT_EXTERN NSString * const kIMAGE_photoDelete;
+UIKIT_EXTERN NSString * const kIMG_portrait ;
+UIKIT_EXTERN NSString * const kIMG_portrait_N ;
+UIKIT_EXTERN NSString * const kIMG_portrait_H ;
+UIKIT_EXTERN NSString * const kIMG_pictureAdd ;
+UIKIT_EXTERN NSString * const kIMG_pictureDelete ;
 
-UIKIT_EXTERN NSString * const kIMAGE_default_failed;
-UIKIT_EXTERN NSString * const kIMAGE_default_failed_S;
+UIKIT_EXTERN NSString * const kIMG_defaultFailed ;
+UIKIT_EXTERN NSString * const kIMG_defaultFailed_S ;
 
-UIKIT_EXTERN NSString * const kIMAGE_SexBoy;
-UIKIT_EXTERN NSString * const kIMAGE_SexGril;
+UIKIT_EXTERN NSString * const kIMG_sexBoy ;
+UIKIT_EXTERN NSString * const kIMG_sexGril ;
 
-UIKIT_EXTERN NSString * const kIMAGE_elemetDecrease;
-UIKIT_EXTERN NSString * const kIMAGE_elemetIncrease;
+UIKIT_EXTERN NSString * const kIMG_elemetDec ;
+UIKIT_EXTERN NSString * const kIMG_elemetInc ;
 
-UIKIT_EXTERN NSString * const kIMAGE_scan ;
-UIKIT_EXTERN NSString * const kIMAGE_NFC ;
-UIKIT_EXTERN NSString * const kIMAGE_update ;
-UIKIT_EXTERN NSString * const kIMAGE_inquiry ;
-UIKIT_EXTERN NSString * const kIMAGE_warning ;
+UIKIT_EXTERN NSString * const kIMG_scan ;
+UIKIT_EXTERN NSString * const kIMG_NFC ;
+
+UIKIT_EXTERN NSString * const kIMG_inquiry ;
+UIKIT_EXTERN NSString * const kIMG_update ;
+UIKIT_EXTERN NSString * const kIMG_warning ;
+
+UIKIT_EXTERN NSString * const kIMG_notice ;
+UIKIT_EXTERN NSString * const kIMG_location_H ;
+UIKIT_EXTERN NSString * const kIMG_more ;
+
+UIKIT_EXTERN NSString * const kIMG_selected_NO ;
+UIKIT_EXTERN NSString * const kIMG_selected_YES ;
+UIKIT_EXTERN NSString * const kIMG_Add ;
+
+UIKIT_EXTERN NSString * const kIMG_like_H ;
+UIKIT_EXTERN NSString * const kIMG_like_W ;
 
 UIKIT_EXTERN NSString * const kMsg_NetWorkRequesting;
 UIKIT_EXTERN NSString * const kMsg_NetWorkFailed;
