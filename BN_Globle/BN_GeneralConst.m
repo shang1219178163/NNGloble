@@ -103,6 +103,7 @@ const CGFloat kFZ_Fifth =  10;
 NSString * const kIMG_arrowRight = @"img_arrowRight_gray";
 NSString * const kIMG_arrowDown = @"img_arrowDown_black";
 NSString * const kIMG_arrowBack = @"img_arrowLeft_white";
+NSString * const kIMG_arrowUp = @"img_arrowUp_blue";
 
 NSString * const kIMG_portrait = @"img_portrait_N";
 NSString * const kIMG_portrait_N = @"img_portrait_N";

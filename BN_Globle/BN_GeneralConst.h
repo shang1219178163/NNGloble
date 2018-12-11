@@ -100,6 +100,7 @@ UIKIT_EXTERN const CGFloat kFZ_Fifth ;
 UIKIT_EXTERN NSString * const kIMG_arrowRight ;
 UIKIT_EXTERN NSString * const kIMG_arrowDown ;
 UIKIT_EXTERN NSString * const kIMG_arrowBack ;
+UIKIT_EXTERN NSString * const kIMG_arrowUp ;
 
 UIKIT_EXTERN NSString * const kIMG_portrait ;
 UIKIT_EXTERN NSString * const kIMG_portrait_N ;
