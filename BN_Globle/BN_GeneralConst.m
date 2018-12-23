@@ -13,10 +13,11 @@ NSString * const kNIl_TEXT            =   @"--";
 
 #pragma mark - - kSet
 
-NSString * const kSet_number            =   @"0123456789";
-NSString * const kSet_float             =   @"0123456789.";
-NSString * const kSet_alpha             =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-NSString * const kSet_alpha_num         =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+NSString * const kSetNumber            =   @"0123456789";
+NSString * const kSetFloat             =   @"0123456789.";
+NSString * const kSetAlpha             =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+NSString * const kSetAlpha_Num         =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+NSString * const kSetAlpha_Float         =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.";
 
 #pragma mark - - kTag
 

@@ -1,11 +1,9 @@
 Pod::Spec.new do |s|
 
   s.name         = "BN_Globle"
-  s.version      = "1.2.7"
+  s.version      = "1.2.8"
   s.summary      = "Macro,Const.AppKey."
-  s.description  = <<-DESC
-                    基础宏,常量值,第三方appKey配置
-                   DESC
+  s.description  = "基础宏,常量值,第三方appKey配置"
 
   s.homepage     = "https://github.com/shang1219178163/BN_Globle"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
