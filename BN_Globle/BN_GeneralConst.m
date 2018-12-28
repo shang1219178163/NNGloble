@@ -19,6 +19,20 @@ NSString * const kSetAlpha             =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi
 NSString * const kSetAlpha_Num         =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 NSString * const kSetAlpha_Float         =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.";
 
+
+#pragma mark - - File
+
+const NSInteger kPageSize = 20;
+const NSInteger kFileSize_image = 1*1024*1024;
+
+//plist文件路径
+NSString * const kPlistFilePath = @"/Library/File_Plist/";
+//plist文件名
+NSString * const kPlistName_common = @"HuiZhuBang_common.plist";
+NSString * const kPlistKey_vehicleTypeDict = @"key_vehicleTypeDict";
+NSString * const kPlistKey_vehicleTypeArr = @"key_vehicleTypeArr";
+NSString * const kPlistKey_vehicleTypeIconArr = @"key_vehicleTypeIconArr";
+
 #pragma mark - - kTag
 
 const NSInteger kTAG_LABEL = 100;

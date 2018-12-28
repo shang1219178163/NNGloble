@@ -48,76 +48,13 @@ fprintf(stderr,"%s【line -%d】%s %s\n",[str UTF8String], __LINE__,__PRETTY_FUN
 #endif
 
 
-#define kAdd_By_BIN //add by BIN
-
-
-//颜色
-#define kC_TextColor [UIColor colorWithHexString:@"#333333"]
-#define kC_TextColor_Title [UIColor colorWithHexString:@"#666666"]
-#define kC_TextColor_TitleSub [UIColor colorWithHexString:@"#999999"]
-//主题色
-
-//绿色
-//#define UIColor.themeColor_One [UIColor colorWithHexString:@"#25b195"]
-//水蓝色
-//#define UIColor.themeColor_Two [UIColor colorWithHexString:@"#29b4f5"]
-
-#define kC_BlueColor    kCOLOR_RGBA(63, 153,231,1)
-
-#define kPageSize 20
-//图片最大尺寸500k
-#define kFileSize_image 1*1024*1024
-
-//强弱引用
-#define kWeakSelf(type)    __weak __typeof(type) weak##type = type;
-#define kStrongSelf(type)  __strong __typeof(type) strongSelf = type;
-
-//强弱引用(进化)
-#define kWeakObj(type)    __weak __typeof(type) weak##type = type;
-#define kStrongObj(type)  __strong __typeof(type) strong##type = type;
-
-
-#define kPlistFilePath  @"/Library/File_Plist/"
-
-//plist文件名
-#define kPlistName_common               @"HuiZhuBang_common.plist"
-#define kPlistKey_vehicleTypeDict       @"key_vehicleTypeDict"
-#define kPlistKey_vehicleTypeArr        @"key_vehicleTypeArr"
-#define kPlistKey_vehicleTypeIconArr    @"key_vehicleTypeIconArr"
-
-
 /*--------------------------------MacroGeometry------------------------------------------------------*/
 #pragma mark - -MacroGeometry与计算有关的尺寸属性
 
-
 //屏幕 rect
-#define kScreen_rect    (UIScreen.mainScreen.bounds)
-
 #define kScreen_width  (UIScreen.mainScreen.bounds.size.width)
 #define kScreen_height (UIScreen.mainScreen.bounds.size.height)
 
-
-//屏幕scale
-#define kScale_Screen  (UIScreen.mainScreen.scale)
-//屏幕分辨率
-#define kSreenResolution (kScreen_width * kScreen_height * kScale_Screen)
-
-//由角度转换弧度 由弧度转换角度
-#define LRDegreesToRadian(x) (M_PI * (x) / 180.0)
-#define LRRadianToDegrees(radian) (radian*180.0)/(M_PI)
-
-#define kMenuViewSize  CGSizeMake(kScreen_width*3/4, kScreen_height)
-#define kMenuViewRatio (3/4.0)
-
-#define kS_scaleOrder  0.7
-
-#define kH_CellHeight_single 50
-
-#define kH_FilterView 45
-#define kH_CellHeight_Filter 40
-
-#define kX_GAP_BTN  20
-#define kH_BtnView  40
 
 #pragma mark- -others其他
 

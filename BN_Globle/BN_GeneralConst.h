@@ -17,6 +17,19 @@ UIKIT_EXTERN NSString * const kSet_number ;
 UIKIT_EXTERN NSString * const kSet_alpha ;
 UIKIT_EXTERN NSString * const kSet_alpha_num ;
 
+#pragma mark - - File
+
+UIKIT_EXTERN const NSInteger kPageSize ;
+UIKIT_EXTERN const NSInteger kFileSize_image ;
+
+//plist文件路径
+UIKIT_EXTERN NSString * const kPlistFilePath ;
+//plist文件名
+UIKIT_EXTERN NSString * const kPlistName_common ;
+UIKIT_EXTERN NSString * const kPlistKey_vehicleTypeDict ;
+UIKIT_EXTERN NSString * const kPlistKey_vehicleTypeArr ;
+UIKIT_EXTERN NSString * const kPlistKey_vehicleTypeIconArr ;
+
 #pragma mark - - kTag
 
 UIKIT_EXTERN const NSInteger kTAG_LABEL ;
