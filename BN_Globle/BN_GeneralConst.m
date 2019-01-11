@@ -8,8 +8,9 @@
 
 #import "BN_GeneralConst.h"
 
-
-NSString * const kNIl_TEXT            =   @"--";
+NSString * const kNIl_TEXT              =   @"--";
+NSString * const kSeparateStr           = @",";
+NSString * const kAsterisk              = @"*";
 
 #pragma mark - - kSet
 

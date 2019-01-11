@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-UIKIT_EXTERN NSString *const kNIl_TEXT ;
+UIKIT_EXTERN NSString * const kNIl_TEXT ;
+UIKIT_EXTERN NSString * const kSeparateStr ;
+UIKIT_EXTERN NSString * const kAsterisk ;
 
 #pragma mark - - kSet
 
