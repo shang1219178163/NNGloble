@@ -24,9 +24,6 @@ UIKIT_EXTERN const NSInteger kFileSize_image ;
 UIKIT_EXTERN NSString * const kPlistFilePath ;
 //plist文件名
 UIKIT_EXTERN NSString * const kPlistName_common ;
-UIKIT_EXTERN NSString * const kPlistKey_vehicleTypeDict ;
-UIKIT_EXTERN NSString * const kPlistKey_vehicleTypeArr ;
-UIKIT_EXTERN NSString * const kPlistKey_vehicleTypeIconArr ;
 
 #pragma mark - - kTag
 
