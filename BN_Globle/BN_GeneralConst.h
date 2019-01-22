@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef UITableViewCell *(^BlockCellForRow)(UITableView *tableView, NSIndexPath *indexPath);
+typedef void(^BlockDidSelectRow)(UITableView *tableView, NSIndexPath *indexPath);
+
 #pragma mark - - kSet
 
 UIKIT_EXTERN NSString * const kSet_number ;

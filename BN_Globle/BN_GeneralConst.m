@@ -8,6 +8,7 @@
 
 #import "BN_GeneralConst.h"
 
+
 #pragma mark - - kSet
 
 NSString * const kSetNumber      =   @"0123456789";
