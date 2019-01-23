@@ -83,9 +83,9 @@ UIKIT_EXTERN const CGFloat kTimerValue ;
 UIKIT_EXTERN const CGFloat kRatio_IDCard ;
 UIKIT_EXTERN const CGFloat kRatio_LeftMenu ;
 
-UIKIT_EXTERN const CGFloat kAnimDuration;
-UIKIT_EXTERN const CGFloat kAnimDuration_Toast ;
-UIKIT_EXTERN const CGFloat kAnimDuration_Drop ;
+UIKIT_EXTERN const CGFloat kDurationShow;
+UIKIT_EXTERN const CGFloat kDurationToast ;
+UIKIT_EXTERN const CGFloat kDurationDrop ;
 
 UIKIT_EXTERN const CGFloat kW_item ;
 UIKIT_EXTERN const CGFloat kW_progressView ;

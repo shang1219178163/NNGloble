@@ -84,9 +84,9 @@ const CGFloat kTimerValue           = 65;
 const CGFloat kRatio_IDCard         = 1.58;
 const CGFloat kRatio_LeftMenu       = 0.8;
 
-const CGFloat kAnimDuration         = 0.3;
-const CGFloat kAnimDuration_Toast   = 1.0;
-const CGFloat kAnimDuration_Drop    = 0.5;
+const CGFloat kDurationShow         = 0.3;
+const CGFloat kDurationDrop         = 0.5;
+const CGFloat kDurationToast        = 1.0;
 
 const CGFloat kW_item               = 80;
 const CGFloat kW_progressView       = 130;
@@ -226,5 +226,6 @@ NSString * const kNotiPost_logOut          = @"kNotiPost_logOut";
 NSString * const kNotiPost_backgroudUploadLocation = @"kNotiPost_backgroudUploadLocation";
 
 @implementation BN_GeneralConst
+
 
 @end

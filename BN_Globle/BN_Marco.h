@@ -52,8 +52,11 @@ fprintf(stderr,"%s【line -%d】%s %s\n",[str UTF8String], __LINE__,__PRETTY_FUN
 #pragma mark - -MacroGeometry与计算有关的尺寸属性
 
 //屏幕 rect
-#define kScreenWidth  (UIScreen.mainScreen.bounds.size.width)
-#define kScreenHeight (UIScreen.mainScreen.bounds.size.height)
+#define kScreenWidth        (UIScreen.mainScreen.bounds.size.width)
+#define kScreenHeight       (UIScreen.mainScreen.bounds.size.height)
+
+#define kSizeArrow          CGSize(25.0, 35.0)
+#define kSizeBSelected      CGSize(35.0, 35.0)
 
 
 #pragma mark- -others其他
@@ -84,15 +87,6 @@ vc.automaticallyAdjustsScrollViewInsets = NO;\
 }\
 _Pragma("clang diagnostic pop") \
 } while (0)
-
-
-////设置加载提示框（第三方框架：Toast）
-//#define LRToast(str)  CSToastStyle *style = [[CSToastStyle alloc] initWithDefaultStyle]; \
-//[keyWindow  makeToast:str duration:0.6 position:CSToastPositionCenter style:style];\
-//keyWindow.userInteractionEnabled = NO; \
-//dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.6 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{\
-//keyWindow.userInteractionEnabled = YES;\
-//});
 
 /**
  YYKit
