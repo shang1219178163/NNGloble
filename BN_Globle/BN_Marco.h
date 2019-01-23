@@ -55,8 +55,8 @@ fprintf(stderr,"%s【line -%d】%s %s\n",[str UTF8String], __LINE__,__PRETTY_FUN
 #define kScreenWidth        (UIScreen.mainScreen.bounds.size.width)
 #define kScreenHeight       (UIScreen.mainScreen.bounds.size.height)
 
-#define kSizeArrow          CGSize(25.0, 35.0)
-#define kSizeBSelected      CGSize(35.0, 35.0)
+#define kSizeArrow          CGSizeMake(25.0, 35.0)
+#define kSizeBSelected      CGSizeMake(35.0, 35.0)
 
 
 #pragma mark- -others其他
