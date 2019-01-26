@@ -1,5 +1,5 @@
 //
-//  BN_GeneralConst.h
+//  BNGeneralConst.h
 //  HuiZhuBang
 //
 //  Created by hsf on 2018/5/14.
@@ -224,6 +224,6 @@ UIKIT_EXTERN NSString * const kNotiPost_logIn;
 UIKIT_EXTERN NSString * const kNotiPost_logOut;
 UIKIT_EXTERN NSString * const kNotiPost_backgroudUploadLocation ;
 
-@interface BN_GeneralConst : NSObject
+@interface BNGeneralConst : NSObject
 
 @end

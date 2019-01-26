@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
 
-  s.name         = "BN_Globle"
+  s.name         = "BNGloble"
   s.version      = "1.3.4.2"
   s.summary      = "Macro,Const.AppKey."
   s.description  = "基础宏,常量值,第三方appKey配置"
 
-  s.homepage     = "https://github.com/shang1219178163/BN_Globle"
+  s.homepage     = "https://github.com/shang1219178163/BNGloble"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -15,12 +15,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
 
-  s.source       = { :git => "https://github.com/shang1219178163/BN_Globle.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/shang1219178163/BNGloble.git", :tag => "#{s.version}" }
 
-  s.source_files = "BN_Globle/*"
-  s.public_header_files = "BN_Globle/*.h"
+  s.source_files = "BNGloble/*"
+  s.public_header_files = "BNGloble/*.h"
   s.resource_bundles = {
-    'BN_Globle' => ['BN_Globle/Resources/*.xcassets']
+    'BNGloble' => ['BNGloble/Resources/*.xcassets']
   }
 
   s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage',

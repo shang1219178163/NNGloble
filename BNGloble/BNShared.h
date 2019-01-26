@@ -1,13 +1,13 @@
 //
-//  BN_Shared.h
+//  BNShared.h
 //  HuiZhuBang
 //
 //  Created by BIN on 2018/8/20.
 //  Copyright © 2018年 WeiHouKeJi. All rights reserved.
 //
 
-#ifndef BN_Shared_h
-#define BN_Shared_h
+#ifndef BNShared_h
+#define BNShared_h
 
 
 //条件编译
@@ -16,10 +16,10 @@
 
 
 //.h头文件中的单例宏
-#define BN_SingletonH(name) + (instancetype)shared;
+#define BNSingletonH(name) + (instancetype)shared;
 
 //.m文件中的单例宏
-#define BN_SingletonM(name) \
+#define BNSingletonM(name) \
 static id _instance;\
 + (instancetype)allocWithZone:(struct _NSZone *)zone{\
     static dispatch_once_t onceToken;\
@@ -46,10 +46,10 @@ return _instance;\
 
 
 //.h头文件中的单例宏
-#define BN_SingletonH(name) + (instancetype)shared;
+#define BNSingletonH(name) + (instancetype)shared;
 
 //.m文件中的单例宏
-#define BN_SingletonM(name) \
+#define BNSingletonM(name) \
 static id _instance;\
 + (instancetype)allocWithZone:(struct _NSZone *)zone{\
         static dispatch_once_t onceToken;\
@@ -84,4 +84,4 @@ return _instance;\
 
 
 
-#endif /* BN_Shared_h */
+#endif /* BNShared_h */

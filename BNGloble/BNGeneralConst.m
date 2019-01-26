@@ -1,12 +1,12 @@
 //
-//  BN_GeneralConst.m
+//  BNGeneralConst.m
 //  HuiZhuBang
 //
 //  Created by hsf on 2018/5/14.
 //  Copyright © 2018年 WeiHouKeJi. All rights reserved.
 //
 
-#import "BN_GeneralConst.h"
+#import "BNGeneralConst.h"
 
 
 #pragma mark - - kSet
@@ -225,7 +225,7 @@ NSString * const kNotiPost_logIn           = @"kNotiPost_logIn";
 NSString * const kNotiPost_logOut          = @"kNotiPost_logOut";
 NSString * const kNotiPost_backgroudUploadLocation = @"kNotiPost_backgroudUploadLocation";
 
-@implementation BN_GeneralConst
+@implementation BNGeneralConst
 
 
 @end

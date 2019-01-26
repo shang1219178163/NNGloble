@@ -6,9 +6,9 @@
 //  Copyright © 2018年 BN. All rights reserved.
 //
 
-#import "BN_AttStringKey.h"
+#import "BNAttStringKey.h"
 
-@implementation BN_AttStringKey
+@implementation BNAttStringKey
 
 static NSString *_obj = nil;
 static NSString *_title = nil;

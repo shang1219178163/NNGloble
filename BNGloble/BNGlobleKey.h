@@ -1,13 +1,13 @@
 //
-//  BN_GlobleKey.h
+//  BNGlobleKey.h
 //  ProductTemplet
 //
 //  Created by hsf on 2018/9/29.
 //  Copyright © 2018年 BN. All rights reserved.
 //
 
-#ifndef BN_GlobleKey_h
-#define BN_GlobleKey_h
+#ifndef BNGlobleKey_h
+#define BNGlobleKey_h
 
 /**
  协议条款网址
@@ -85,4 +85,4 @@
 #define kRecognizeCard_AppCode     @"";
 
 
-#endif /* BN_GlobleKey_h */
+#endif /* BNGlobleKey_h */
