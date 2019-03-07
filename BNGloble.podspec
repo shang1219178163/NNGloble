@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BNGloble"
-  s.version      = "1.3.6.2"
+  s.version      = "1.3.6.3"
   s.summary      = "Macro,Const.AppKey."
   s.description  = "基础宏,常量值,第三方appKey配置"
 
@@ -23,9 +23,9 @@ Pod::Spec.new do |s|
     'BNGloble' => ['BNGloble/Resources/*.xcassets']
   }
 
-  s.libraries = 'sqlite3', 'c++',
+  s.libraries = 'sqlite3', 'c++'
   s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage',
-    'CoreLocation','CoreTelephony', 'GLKit','QuartzCore', 'ImageIO','Accelerate',
+    'CoreLocation','CoreTelephony', 'GLKit','QuartzCore', 'ImageIO',
     'AssetsLibrary', 'MobileCoreServices', 'SystemConfiguration','ImageIO',
     'JavaScriptCore','WebKit'
 
