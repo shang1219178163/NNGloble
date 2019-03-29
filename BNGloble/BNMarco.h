@@ -104,9 +104,9 @@ _Pragma("clang diagnostic pop") \
 #ifndef weakify
 #if DEBUG
 #if __has_feature(objc_arc)
-#define weakify(object) __weak __typeof__(object) weak##_##object = object;
+#define weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
 #else
-#define weakify(object) __block __typeof__(object) block##_##object = object;
+#define weakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
 #endif
 #else
 #if __has_feature(objc_arc)
@@ -120,9 +120,9 @@ _Pragma("clang diagnostic pop") \
 #ifndef strongify
 #if DEBUG
 #if __has_feature(objc_arc)
-#define strongify(object) __typeof__(object) object = weak##_##object;
+#define strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
 #else
-#define strongify(object) __typeof__(object) object = block##_##object;
+#define strongify(object) autoreleasepool{} __typeof__(object) object = block##_##object;
 #endif
 #else
 #if __has_feature(objc_arc)
