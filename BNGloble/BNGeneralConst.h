@@ -12,6 +12,11 @@
 typedef UITableViewCell *(^BlockCellForRow)(UITableView *tableView, NSIndexPath *indexPath);
 typedef void(^BlockDidSelectRow)(UITableView *tableView, NSIndexPath *indexPath);
 
+#pragma mark - - kLanguage
+
+UIKIT_EXTERN NSString * const kLanguageCN ;
+UIKIT_EXTERN NSString * const kLanguageEN ;
+
 #pragma mark - - kSet
 
 UIKIT_EXTERN NSString * const kSet_number ;

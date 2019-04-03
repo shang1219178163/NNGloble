@@ -9,6 +9,9 @@
 #import "BNGeneralConst.h"
 
 
+NSString * const kLanguageCN     =   @"zh-CN";
+NSString * const kLanguageEN     =   @"en-US";
+
 #pragma mark - - kSet
 
 NSString * const kSetNumber      =   @"0123456789";
