@@ -81,7 +81,6 @@ static NSString *_backgroundColor = nil;
         _backgroundColor = @"backgroundColor";
     }
     return _backgroundColor;
-    
 }
 
 //+(NSString *)foregroundColor{

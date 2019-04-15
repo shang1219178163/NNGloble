@@ -13,28 +13,47 @@ typedef UITableViewCell *(^BlockCellForRow)(UITableView *tableView, NSIndexPath 
 typedef void(^BlockDidSelectRow)(UITableView *tableView, NSIndexPath *indexPath);
 
 #pragma mark - - kLanguage
-
+/// 中文
 FOUNDATION_EXPORT NSString * const kLanguageCN ;
+/// 英文
 FOUNDATION_EXPORT NSString * const kLanguageEN ;
 
-#pragma mark - - kArr
-FOUNDATION_EXPORT NSString * const kArr_avg_float ;
-FOUNDATION_EXPORT NSString * const kArr_sum_inter ;
-FOUNDATION_EXPORT NSString * const kArr_max_inter ;
-FOUNDATION_EXPORT NSString * const kArr_min_inter ;
-FOUNDATION_EXPORT NSString * const kArr_sum_float ;
-FOUNDATION_EXPORT NSString * const kArr_max_float ;
-FOUNDATION_EXPORT NSString * const kArr_min_float ;
-FOUNDATION_EXPORT NSString * const kArr_upper_list ;//大小写转换
-FOUNDATION_EXPORT NSString * const kArr_lower_list ;//大小写转换
-FOUNDATION_EXPORT NSString * const kArrs_unionDist_list ;//数组内部去重
-FOUNDATION_EXPORT NSString * const kArrs_union_list ;
-
 #pragma mark - - kSet
+/// 0123456789
+FOUNDATION_EXPORT NSString * const kSetNumber ;
+/// 0123456789.
+FOUNDATION_EXPORT NSString * const kSetFloat ;
+/// ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+FOUNDATION_EXPORT NSString * const kSetAlpha ;
+/// ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+FOUNDATION_EXPORT NSString * const kSetAlpha_Num ;
+/// ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.
+FOUNDATION_EXPORT NSString * const kSetAlpha_Float ;
 
-FOUNDATION_EXPORT NSString * const kSet_number ;
-FOUNDATION_EXPORT NSString * const kSet_alpha ;
-FOUNDATION_EXPORT NSString * const kSet_alpha_num ;
+
+#pragma mark - - kArr
+/// avg.floatValue
+FOUNDATION_EXPORT NSString * const kArr_avg_float ;
+/// sum.intValue
+FOUNDATION_EXPORT NSString * const kArr_sum_inter ;
+/// max.intValue
+FOUNDATION_EXPORT NSString * const kArr_max_inter ;
+/// min.intValue
+FOUNDATION_EXPORT NSString * const kArr_min_inter ;
+/// sum.floatValue
+FOUNDATION_EXPORT NSString * const kArr_sum_float ;
+/// max.floatValue
+FOUNDATION_EXPORT NSString * const kArr_max_float ;
+/// min.floatValue
+FOUNDATION_EXPORT NSString * const kArr_min_float ;
+/// uppercaseString
+FOUNDATION_EXPORT NSString * const kArr_upper_list ;
+/// lowercaseString
+FOUNDATION_EXPORT NSString * const kArr_lower_list ;
+/// distinctUnionOfArrays.self(数组内部去重)
+FOUNDATION_EXPORT NSString * const kArrs_unionDist_list ;
+/// unionOfArrays.self
+FOUNDATION_EXPORT NSString * const kArrs_union_list ;
 
 #pragma mark - - File
 
@@ -77,11 +96,15 @@ FOUNDATION_EXPORT const NSInteger kComponent_2 ;
 
 
 #pragma mark - -MacroGeometry与计算有关的尺寸属性
+/// 顶部状态栏 20
+FOUNDATION_EXPORT const CGFloat kStatusBarHeight ;
+/// 导航栏高 44
+FOUNDATION_EXPORT const CGFloat kNaviBarHeight ;
+/// 底部tabBar高度 49
+FOUNDATION_EXPORT const CGFloat kTabBarHeight ;
+/// 选择器默认高度 180
+FOUNDATION_EXPORT const CGFloat kPickerViewHeight;
 
-FOUNDATION_EXPORT const CGFloat kH_StatusBar ;
-FOUNDATION_EXPORT const CGFloat kH_NaviagtionBar ;
-FOUNDATION_EXPORT const CGFloat kH_TabBar ;
-FOUNDATION_EXPORT const CGFloat kH_PickerView;
 FOUNDATION_EXPORT const CGFloat kH_SegmentOfCustom ;
 FOUNDATION_EXPORT const CGFloat kH_SegmentControl;
 
@@ -118,11 +141,11 @@ FOUNDATION_EXPORT const CGFloat kW_LINE_Vert ;
 
 #pragma mark - -font
 
-FOUNDATION_EXPORT const CGFloat kFZ_First ;
-FOUNDATION_EXPORT const CGFloat kFZ_Second ;
-FOUNDATION_EXPORT const CGFloat kFZ_Third ;
-FOUNDATION_EXPORT const CGFloat kFZ_Fouth ;
-FOUNDATION_EXPORT const CGFloat kFZ_Fifth ;
+FOUNDATION_EXPORT const CGFloat kFontSize18 ;
+FOUNDATION_EXPORT const CGFloat kFontSize16 ;
+FOUNDATION_EXPORT const CGFloat kFontSize14 ;
+FOUNDATION_EXPORT const CGFloat kFontSize12 ;
+FOUNDATION_EXPORT const CGFloat kFontSize10 ;
 
 #pragma mark - -视图
 
@@ -188,7 +211,7 @@ FOUNDATION_EXPORT NSString * const kActionTitle_Update;
 FOUNDATION_EXPORT NSString * const kActionTitle_Collect;
 FOUNDATION_EXPORT NSString * const kActionTitle_Recover;
 
-FOUNDATION_EXPORT NSString * const kNIl_TEXT ;
+FOUNDATION_EXPORT NSString * const kNilText ;
 FOUNDATION_EXPORT NSString * const kSeparateStr ;
 FOUNDATION_EXPORT NSString * const kAsterisk ;
 FOUNDATION_EXPORT NSString * const kBlankHalf ;

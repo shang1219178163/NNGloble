@@ -75,10 +75,10 @@ const NSInteger kComponent_2         = 2 ;
 
 #pragma mark - -MacroGeometry与计算有关的尺寸属性
 
-const CGFloat kH_StatusBar          = 20;
-const CGFloat kH_NaviagtionBar      = 44;
-const CGFloat kH_TabBar             = 49;
-const CGFloat kH_PickerView         = 180;
+const CGFloat kStatusBarHeight      = 20;
+const CGFloat kNaviBarHeight        = 44;
+const CGFloat kTabBarHeight         = 49;
+const CGFloat kPickerViewHeight     = 180;
 
 const CGFloat kH_SegmentOfCustom    = 50;
 const CGFloat kH_SegmentControl     = 44;
@@ -118,11 +118,11 @@ const CGFloat kW_LINE_Vert          = 3.0;
 
 #pragma mark - -font
 
-const CGFloat kFZ_First =  18;
-const CGFloat kFZ_Second = 16;
-const CGFloat kFZ_Third =  14;
-const CGFloat kFZ_Fouth =  12;
-const CGFloat kFZ_Fifth =  10;
+const CGFloat kFontSize18 =  18;
+const CGFloat kFontSize16 =  16;
+const CGFloat kFontSize14 =  14;
+const CGFloat kFontSize12 =  12;
+const CGFloat kFontSize10 =  10;
 
 #pragma mark - -视图
 
@@ -188,7 +188,7 @@ NSString * const kActionTitle_Update       = @"立即升级";
 NSString * const kActionTitle_Collect      = @"收藏";
 NSString * const kActionTitle_Recover      = @"恢复";
 
-NSString * const kNIl_TEXT                 = @"--";
+NSString * const kNilText                  = @"--";
 NSString * const kSeparateStr              = @",";
 NSString * const kAsterisk                 = @"*";
 NSString * const kBlankHalf                = @"  ";
@@ -242,6 +242,7 @@ NSString * const kNotiPost_logOut          = @"kNotiPost_logOut";
 NSString * const kNotiPost_backgroudUploadLocation = @"kNotiPost_backgroudUploadLocation";
 
 @implementation BNGeneralConst
+
 
 
 @end
