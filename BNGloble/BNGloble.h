@@ -13,7 +13,6 @@
 
 #import "BNAttStringKey.h"
 #import "BNMarco.h"
-#import "BNGlobleKey.h"
 #import "BNGeneralConst.h"
 #import "BNShared.h"
 
