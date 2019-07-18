@@ -78,7 +78,7 @@ const NSInteger kComponent_2         = 2 ;
 const CGFloat kStatusBarHeight      = 20;
 const CGFloat kNaviBarHeight        = 44;
 const CGFloat kTabBarHeight         = 49;
-const CGFloat kPickerViewHeight     = 180;
+const CGFloat kPickerViewHeight     = 240;
 
 const CGFloat kH_SegmentOfCustom    = 50;
 const CGFloat kH_SegmentControl     = 44;
