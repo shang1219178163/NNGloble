@@ -1,17 +1,17 @@
 //
-//  BNGeneralConst.m
+//  NNGeneralConst.m
 //  HuiZhuBang
 //
 //  Created by hsf on 2018/5/14.
 //  Copyright © 2018年 WeiHouKeJi. All rights reserved.
 //
 
-#import "BNGeneralConst.h"
+#import "NNGeneralConst.h"
 
 
 NSString * const kLanguageCN     =   @"zh-CN";
 NSString * const kLanguageEN     =   @"en-US";
-
+ 
 #pragma mark - - kSet
 
 NSString * const kSetNumber      =   @"0123456789";
@@ -241,7 +241,7 @@ NSString * const kNotiPost_logIn           = @"kNotiPost_logIn";
 NSString * const kNotiPost_logOut          = @"kNotiPost_logOut";
 NSString * const kNotiPost_backgroudUploadLocation = @"kNotiPost_backgroudUploadLocation";
 
-@implementation BNGeneralConst
+@implementation NNGeneralConst
 
 
 

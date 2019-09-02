@@ -1,15 +1,15 @@
 //
-//  BNShared.h
+//  NNShared.h
 //  HuiZhuBang
 //
 //  Created by BIN on 2018/8/20.
 //  Copyright © 2018年 WeiHouKeJi. All rights reserved.
 //
 
-#ifndef BNShared_h
-#define BNShared_h
+#ifndef NNShared_h
+#define NNShared_h
 
-
+ 
 //条件编译
 #if __has_feature(objc_arc)
 //ARC
@@ -84,4 +84,4 @@ return _instance;\
 
 
 
-#endif /* BNShared_h */
+#endif /* NNShared_h */

@@ -1,5 +1,5 @@
 //
-//  BNGeneralConst.h
+//  NNGeneralConst.h
 //  HuiZhuBang
 //
 //  Created by hsf on 2018/5/14.
@@ -9,8 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef UITableViewCell *(^BlockCellForRow)(UITableView *tableView, NSIndexPath *indexPath);
+NS_ASSUME_NONNULL_BEGIN
+ 
+typedef UITableViewCell *_Nullable(^BlockCellForRow)(UITableView *tableView, NSIndexPath *indexPath);
 typedef void(^BlockDidSelectRow)(UITableView *tableView, NSIndexPath *indexPath);
+typedef NSArray *_Nullable(^BlockEditActionsForRow)(UITableView *tableView, NSIndexPath *indexPath);
+
+typedef UICollectionViewCell *_Nullable(^BlockCellForItem)(UICollectionView *collectionView, NSIndexPath *indexPath);
+typedef void(^BlockDidSelectItem)(UICollectionView *collectionView, NSIndexPath *indexPath);
 
 #pragma mark - - kLanguage
 /// 中文
@@ -265,6 +271,8 @@ FOUNDATION_EXPORT NSString * const kNotiPost_logIn;
 FOUNDATION_EXPORT NSString * const kNotiPost_logOut;
 FOUNDATION_EXPORT NSString * const kNotiPost_backgroudUploadLocation ;
 
-@interface BNGeneralConst : NSObject
+@interface NNGeneralConst : NSObject
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -1,15 +1,15 @@
 //
-//  BNMarco.h
+//  NNMarco.h
 //  ProductTemplet
 //
 //  Created by hsf on 2018/9/29.
 //  Copyright © 2018年 BN. All rights reserved.
 //
 
-#ifndef BNMarco_h
-#define BNMarco_h
-
-#pragma mark - -BNMarco通用
+#ifndef NNMarco_h
+#define NNMarco_h
+ 
+#pragma mark - -NNMarco通用
 
 #ifdef DEBUG
 //#define DDLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
@@ -135,4 +135,4 @@ _Pragma("clang diagnostic pop") \
 
 
 
-#endif /* BNMarco_h */
+#endif /* NNMarco_h */
