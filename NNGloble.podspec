@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NNGloble"
-  s.version      = "1.4.3"
+  s.version      = "1.4.3.1"
   s.summary      = "Macro,Const.AppKey."
   s.description  = "基础宏,常量值,第三方appKey配置"
 
