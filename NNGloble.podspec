@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
 
   s.name         = "NNGloble"
-  s.version      = "1.5.4.2"
+  s.version      = "1.5.5"
   s.summary      = "Macro,Const.AppKey."
-  s.description  = "基础宏,常量值,第三方appKey配置"
+  s.description  = "基础宏,常量值"
 
   s.homepage     = "https://github.com/shang1219178163/NNGloble"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"

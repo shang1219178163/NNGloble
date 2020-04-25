@@ -9,7 +9,7 @@
 
 #import "NNRadioView.h"
 
-#import "NNGloble.h"
+#import <NNGloble/NNGloble.h>
 
 NSString *const kRadio_title = @"kRadio_title";
 NSString *const kRadio_textColorH = @"kRadio_textColorH";
