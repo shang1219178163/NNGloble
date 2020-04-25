@@ -69,7 +69,7 @@ const NSInteger kTAG_VIEW_Segment    = 1100;
 const NSInteger kTAG_VIEW_RADIO      = 1200;
 const NSInteger kTAG_VIEW_Picture    = 1300;
 
-const NSInteger kTAG_UItableViewCell = 1500;
+const NSInteger kTAG_UITableViewCell = 1500;
 
 const NSInteger kTAG_ICAROUSEL       = 950;
 const NSInteger kTAG_PAGE_CONTROL    = 951;
