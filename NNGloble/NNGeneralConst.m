@@ -17,27 +17,27 @@ NSString * const kLanguageEN     =   @"en-US";
 NSString * const kSetNumber      =   @"0123456789";
 NSString * const kSetFloat       =   @"0123456789.";
 NSString * const kSetAlpha       =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-NSString * const kSetAlpha_Num   =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-NSString * const kSetAlpha_Float =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.";
+NSString * const kSetAlphaNum   =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+NSString * const kSetAlphaFloat =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.";
 
 #pragma mark - - kArr
 
-NSString * const kArrAvg_float = @"@avg.floatValue";
+NSString * const kArrAvgFloat = @"@avg.floatValue";
 
-NSString * const kArrSum_float = @"@sum.floatValue";
-NSString * const kArrSum_inter = @"@sum.intValue";
+NSString * const kArrSumFloat = @"@sum.floatValue";
+NSString * const kArrSumInter = @"@sum.intValue";
 
-NSString * const kArrMax_float = @"@max.floatValue";
-NSString * const kArrMax_inter = @"@max.intValue";
+NSString * const kArrMaxFloat = @"@max.floatValue";
+NSString * const kArrMaxInter = @"@max.intValue";
 
-NSString * const kArrMin_float = @"@min.floatValue";
-NSString * const kArrMin_inter = @"@min.intValue";
+NSString * const kArrMinFloat = @"@min.floatValue";
+NSString * const kArrMinInter = @"@min.intValue";
 
-NSString * const kArrUpper_list = @"uppercaseString";//大小写转换
-NSString * const kArrLower_list = @"lowercaseString";//大小写转换
+NSString * const kArrUpperList = @"uppercaseString";//大小写转换
+NSString * const kArrLowerList = @"lowercaseString";//大小写转换
 
-NSString * const kArrsUnionDist_list = @"@distinctUnionOfArrays.self";//数组内部去重
-NSString * const kArrsUnion_list = @"@unionOfArrays.self";
+NSString * const kArrsUnionDistList = @"@distinctUnionOfArrays.self";//数组内部去重
+NSString * const kArrsUnionList = @"@unionOfArrays.self";
 
 #pragma mark - - File
 

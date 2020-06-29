@@ -32,34 +32,34 @@ FOUNDATION_EXPORT NSString * const kSetFloat ;
 /// ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
 FOUNDATION_EXPORT NSString * const kSetAlpha ;
 /// ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
-FOUNDATION_EXPORT NSString * const kSetAlpha_Num ;
+FOUNDATION_EXPORT NSString * const kSetAlphaNum ;
 /// ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.
-FOUNDATION_EXPORT NSString * const kSetAlpha_Float ;
+FOUNDATION_EXPORT NSString * const kSetAlphaFloat ;
 
 
 #pragma mark - - kArr
 /// avg.floatValue
-FOUNDATION_EXPORT NSString * const kArrAvg_float ;
+FOUNDATION_EXPORT NSString * const kArrAvgFloat ;
 /// sum.floatValue
-FOUNDATION_EXPORT NSString * const kArrSum_float ;
+FOUNDATION_EXPORT NSString * const kArrSumFloat ;
 /// sum.intValue
-FOUNDATION_EXPORT NSString * const kArrSum_inter ;
+FOUNDATION_EXPORT NSString * const kArrSumInter ;
 /// max.floatValue
-FOUNDATION_EXPORT NSString * const kArrMax_float ;
+FOUNDATION_EXPORT NSString * const kArrMaxFloat ;
 /// max.intValue
-FOUNDATION_EXPORT NSString * const kArrMax_inter ;
+FOUNDATION_EXPORT NSString * const kArrMaxInter ;
 /// min.floatValue
-FOUNDATION_EXPORT NSString * const kArrMin_float ;
+FOUNDATION_EXPORT NSString * const kArrMinFloat ;
 /// min.intValue
-FOUNDATION_EXPORT NSString * const kArrMin_inter ;
+FOUNDATION_EXPORT NSString * const kArrMinInter ;
 /// uppercaseString
-FOUNDATION_EXPORT NSString * const kArrUpper_list ;
+FOUNDATION_EXPORT NSString * const kArrUpperList ;
 /// lowercaseString
-FOUNDATION_EXPORT NSString * const kArrLower_list ;
+FOUNDATION_EXPORT NSString * const kArrLowerList ;
 /// distinctUnionOfArrays.self(数组内部去重)
-FOUNDATION_EXPORT NSString * const kArrsUnionDist_list ;
+FOUNDATION_EXPORT NSString * const kArrsUnionDistList ;
 /// unionOfArrays.self
-FOUNDATION_EXPORT NSString * const kArrsUnion_list ;
+FOUNDATION_EXPORT NSString * const kArrsUnionList ;
 
 #pragma mark - - File
 
