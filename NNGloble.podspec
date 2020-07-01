@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NNGloble"
-  s.version      = "1.5.6"
+  s.version      = "1.6.0"
   s.summary      = "Macro,Const.AppKey."
   s.description  = "基础宏,常量值"
 
@@ -24,9 +24,6 @@ Pod::Spec.new do |s|
   }
 
   s.libraries = 'sqlite3', 'c++'
-  s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage',
-    'CoreLocation','CoreTelephony', 'GLKit','QuartzCore', 'ImageIO',
-    'AssetsLibrary', 'MobileCoreServices', 'SystemConfiguration','ImageIO',
-    'JavaScriptCore','WebKit'
+  s.frameworks = 'UIKit', 'CoreFoundation'
 
 end
