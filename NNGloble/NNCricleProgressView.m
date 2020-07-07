@@ -24,12 +24,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = UIColor.clearColor;
-        
         [self addSubview:self.label];
-
     }
     return self;
-    
 }
 
 -(void)setProgress:(CGFloat)progress{

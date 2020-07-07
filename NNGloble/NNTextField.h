@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol keyInputTextFieldDelegate <NSObject>
+@protocol NNInputTextFieldDelegate <NSObject>
 
 - (void)textFieldDeleteBackward;
  
@@ -19,6 +19,6 @@
 @property (nonatomic, assign) CGFloat leftViewPadding;
 @property (nonatomic, assign) CGFloat rightViewPadding;
 
-@property (nonatomic,weak) id<keyInputTextFieldDelegate>keyInputDelegate;
+@property (nonatomic,weak) id<NNInputTextFieldDelegate>keyInputDelegate;
 
 @end

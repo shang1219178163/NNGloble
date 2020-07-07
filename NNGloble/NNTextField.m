@@ -36,12 +36,10 @@
     CGFloat right = 3;
     if (self.leftViewPadding > 0) {
         left += self.leftViewPadding;
-        
     }
     
     if (self.rightViewPadding > 0) {
         right += self.rightViewPadding;
-        
     }
     UIEdgeInsets insets = UIEdgeInsetsMake(top, left, bottom, right);
     return UIEdgeInsetsInsetRect(rect, insets);
@@ -57,14 +55,12 @@
     CGFloat right = 3;
     if (self.leftViewPadding > 0) {
         left += self.leftViewPadding;
-        
     }
     
     if (self.rightViewPadding > 0) {
         right += self.rightViewPadding;
-        
     }
-
+ 
     UIEdgeInsets insets = UIEdgeInsetsMake(top, left, bottom, right);
     return UIEdgeInsetsInsetRect(rect, insets);
 }

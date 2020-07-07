@@ -16,8 +16,8 @@ FOUNDATION_EXPORT NSString *const kRadio_imageN ;
  
 @interface NNRadioView : UIView
 
-@property (nonatomic, strong) UIImageView * imageView;
-@property (nonatomic, strong) UILabel * label;
+@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UILabel *label;
 
 @property (nonatomic, assign) BOOL isSelected;
 /**
