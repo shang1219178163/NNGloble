@@ -9,35 +9,35 @@
 #import "NNGeneralConst.h"
 
 
-NSString * const kLanguageCN     =   @"zh-CN";
-NSString * const kLanguageEN     =   @"en-US";
+NSString * const kLanguageCN    = @"zh-CN";
+NSString * const kLanguageEN    = @"en-US";
  
 #pragma mark - - kSet
 
-NSString * const kSetNumber      =   @"0123456789";
-NSString * const kSetFloat       =   @"0123456789.";
-NSString * const kSetAlpha       =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-NSString * const kSetAlphaNum   =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-NSString * const kSetAlphaFloat =   @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.";
+NSString * const kSetNumber     = @"0123456789";
+NSString * const kSetFloat      = @"0123456789.";
+NSString * const kSetAlpha      = @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+NSString * const kSetAlphaNum   = @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+NSString * const kSetAlphaFloat = @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.";
 
 #pragma mark - - kArr
 
-NSString * const kArrAvgFloat = @"@avg.floatValue";
+NSString * const kArrAvgFloat       = @"@avg.floatValue";
 
-NSString * const kArrSumFloat = @"@sum.floatValue";
-NSString * const kArrSumInter = @"@sum.intValue";
+NSString * const kArrSumFloat       = @"@sum.floatValue";
+NSString * const kArrSumInter       = @"@sum.intValue";
 
-NSString * const kArrMaxFloat = @"@max.floatValue";
-NSString * const kArrMaxInter = @"@max.intValue";
+NSString * const kArrMaxFloat       = @"@max.floatValue";
+NSString * const kArrMaxInter       = @"@max.intValue";
 
-NSString * const kArrMinFloat = @"@min.floatValue";
-NSString * const kArrMinInter = @"@min.intValue";
+NSString * const kArrMinFloat       = @"@min.floatValue";
+NSString * const kArrMinInter       = @"@min.intValue";
 
-NSString * const kArrUpperList = @"uppercaseString";//大小写转换
-NSString * const kArrLowerList = @"lowercaseString";//大小写转换
+NSString * const kArrUpperList      = @"uppercaseString";//大小写转换
+NSString * const kArrLowerList      = @"lowercaseString";//大小写转换
 
 NSString * const kArrsUnionDistList = @"@distinctUnionOfArrays.self";//数组内部去重
-NSString * const kArrsUnionList = @"@unionOfArrays.self";
+NSString * const kArrsUnionList     = @"@unionOfArrays.self";
 
 #pragma mark - - File
 
@@ -46,8 +46,6 @@ const NSInteger kFileSize_image    = 1*1024*1024;
 
 //plist文件路径
 NSString * const kPlistFilePath    = @"/Library/File_Plist/";
-//plist文件名
-NSString * const kPlistName_common = @"HuiZhuBang_common.plist";
 
 #pragma mark - - kTag
 
@@ -182,69 +180,69 @@ NSString * const kIDCardFailed         = @"身份证识别失败,请稍后再试
 NSString * const kIDCardSuccess        = @"身份证识别成功";
 
 
-NSString * const kTitleKnow            = @"知道了";
-NSString * const kTitleSure            = @"确定";
-NSString * const kTitleCancell         = @"取消";
-NSString * const kTitleDelete          = @"删除";
-NSString * const kTitleDrop            = @"彻底删除";
-NSString * const kTitleCall            = @"呼叫";
-NSString * const kTitleUpdate          = @"立即升级";
+NSString * const kTitleKnow    = @"知道了";
+NSString * const kTitleSure    = @"确定";
+NSString * const kTitleCancell = @"取消";
+NSString * const kTitleDelete  = @"删除";
+NSString * const kTitleDrop    = @"彻底删除";
+NSString * const kTitleCall    = @"呼叫";
+NSString * const kTitleUpdate  = @"立即升级";
 
-NSString * const kTitleCollect         = @"收藏";
-NSString * const kTitleRecover         = @"恢复";
+NSString * const kTitleCollect = @"收藏";
+NSString * const kTitleRecover = @"恢复";
 
-NSString * const kNilText              = @"--";
-NSString * const kSeparateStr          = @",";
-NSString * const kAsterisk             = @"*";
-NSString * const kBlankHalf            = @"  ";
-NSString * const kBlankOne             = @"    ";
-NSString * const kBlankTwo             = @"        ";
-NSString * const kBlankFour            = @"                ";
+NSString * const kNilText      = @"--";
+NSString * const kSeparateStr  = @",";
+NSString * const kAsterisk     = @"*";
+NSString * const kBlankHalf    = @"  ";
+NSString * const kBlankOne     = @"    ";
+NSString * const kBlankTwo     = @"        ";
+NSString * const kBlankFour    = @"                ";
 
 #pragma mark - - 通用
 
-NSString * const kDesWeek                 =   @"星期一,星期二,星期三,星期四,星期五,星期六,星期天";
-NSString * const kDesMonth                =   @"正月, 二月, 三月, 四月, 五月, 六月, 七月, 八月,九月, 十月, 冬月, 腊月";
-NSString * const kDesDay                  =   @"初一, 初二, 初三, 初四, 初五, 初六, 初七, 初八, 初九, 初十,十一, 十二, 十三, 十四, 十五, 十六, 十七, 十八, 十九, 二十, 廿一, 廿二, 廿三, 廿四, 廿五, 廿六, 廿七, 廿八, 廿九, 三十, 三十一";
+NSString * const kDesWeek             = @"星期一,星期二,星期三,星期四,星期五,星期六,星期天";
+NSString * const kDesMonth            = @"正月, 二月, 三月, 四月, 五月, 六月, 七月, 八月,九月, 十月, 冬月, 腊月";
+NSString * const kDesDay              = @"初一, 初二, 初三, 初四, 初五, 初六, 初七, 初八, 初九, 初十,十一, 十二, 十三, 十四, 十五, 十六, 十七, 十八, 十九, 二十, 廿一, 廿二, 廿三, 廿四, 廿五, 廿六, 廿七, 廿八, 廿九, 三十, 三十一";
 
-NSString * const kItem_obj                 =   @"kItem_obj";
-NSString * const kItem_objSeleted          =   @"kItem_objSeleted";
-NSString * const kItem_block               =   @"kItem_block";
+NSString * const kItemObj             = @"kItemObj";
+NSString * const kItemObjSeleted      = @"kItemObjSeleted";
+NSString * const kItemBlock           = @"kItemBlock";
 
-NSString * const kItem_title               =   @"kItem_title";
-NSString * const kItem_titleColor          =   @"kItem_titleColor";
-NSString * const kItem_textField           =   @"kItem_textField";
+NSString * const kItemTitle           = @"kItemTitle";
+NSString * const kItemTitleColor      = @"kItemTitleColor";
+NSString * const kItemTextField       = @"kItemTextField";
 
-NSString * const kItem_titleSub            =   @"kItem_titleSub";
-NSString * const kItem_titleSubColor       =   @"kItem_titleSubColor";
-NSString * const kItem_titleSection        =   @"kItem_titleSection";
+NSString * const kItemTitleSub        = @"kItemTitleSub";
+NSString * const kItemTitleSubColor   = @"kItemTitleSubColor";
+NSString * const kItemTitleSection    = @"kItemTitleSection";
 
-NSString * const kItem_image               =   @"kItem_image";
-NSString * const kItem_image_H             =   @"kItem_image_H";
+NSString * const kItemImage           = @"kItemImage";
+NSString * const kItemImage_H         = @"kItemImage_H";
 
-NSString * const kItem_controller          =   @"kItem_controller";
-NSString * const kItem_controllerTitle     =   @"kItem_controllerTitle";
-NSString * const kItem_height              =   @"kItem_height";
+NSString * const kItemController      = @"kItemController";
+NSString * const kItemControllerTitle = @"kItemControllerTitle";
+NSString * const kItemHeight          = @"kItemHeight";
 
-NSString * const kItem_dataList            =   @"kItem_dataList";
-NSString * const kItem_finished            =   @"kItem_finish";
+NSString * const kItemDataList        = @"kItemDataList";
+NSString * const kItemFinished        = @"kItem_finish";
 
-NSString * const kItem_header              =   @"kItem_header";
-NSString * const kItem_footer              =   @"kItem_footer";
+NSString * const kItemHeader          = @"kItemHeader";
+NSString * const kItemFooter          =   @"kItemFooter";
 
 #pragma mark - -推送通知
 
-NSString * const kNoti_title               = @"kNoti_title";
-NSString * const kNoti_subtitle            = @"kNoti_subtitle";
-NSString * const kNoti_body                = @"kNoti_body";
-NSString * const kNoti_badge               = @"kNoti_badge";
+NSString * const kNotiTitle           = @"kNotiTitle";
+NSString * const kNotiSubtitle        = @"kNotiSubtitle";
+NSString * const kNotiBody            = @"kNotiBody";
+NSString * const kNotiBadge           = @"kNotiBadge";
 
 
 #pragma mark - -通知
 
-NSString * const kNotiPostNameLogIn           = @"kNotiPostNameLogIn";
-NSString * const kNotiPostNameLogOut          = @"kNotiPostNameLogOut";
-NSString * const kNotiPostNameBackgroudUploadLocation = @"kNotiPostNameBackgroudUploadLocation";
+NSString * const kNotiNameLogIn   = @"kNotiNameLogIn";
+NSString * const kNotiNameLogOut  = @"kNotiNameLogOut";
+NSString * const kNotiNameBackgroudUploadLocation = @"kNotiNameBackgroudUploadLocation";
 
 @implementation NNGeneralConst
 

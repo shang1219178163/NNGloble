@@ -24,7 +24,7 @@ FOUNDATION_EXPORT NSString * const kLanguageCN ;
 /// 英文
 FOUNDATION_EXPORT NSString * const kLanguageEN ;
 
-#pragma mark - - kSet
+#pragma mark - -NSSet
 /// 0123456789
 FOUNDATION_EXPORT NSString * const kSetNumber ;
 /// 0123456789.
@@ -37,7 +37,7 @@ FOUNDATION_EXPORT NSString * const kSetAlphaNum ;
 FOUNDATION_EXPORT NSString * const kSetAlphaFloat ;
 
 
-#pragma mark - - kArr
+#pragma mark - -NSArray
 /// avg.floatValue
 FOUNDATION_EXPORT NSString * const kArrAvgFloat ;
 /// sum.floatValue
@@ -61,17 +61,15 @@ FOUNDATION_EXPORT NSString * const kArrsUnionDistList ;
 /// unionOfArrays.self
 FOUNDATION_EXPORT NSString * const kArrsUnionList ;
 
-#pragma mark - - File
+#pragma mark - -File
 
 FOUNDATION_EXPORT const NSInteger kPageSize ;
 FOUNDATION_EXPORT const NSInteger kFileSize_image ;
 
 //plist文件路径
 FOUNDATION_EXPORT NSString * const kPlistFilePath ;
-//plist文件名
-FOUNDATION_EXPORT NSString * const kPlistName_common ;
 
-#pragma mark - - kTag
+#pragma mark - -kTag
 
 FOUNDATION_EXPORT const NSInteger kTAG_LABEL ;
 FOUNDATION_EXPORT const NSInteger kTAG_BTN ;
@@ -246,45 +244,45 @@ FOUNDATION_EXPORT NSString * const kDesWeek ;
 FOUNDATION_EXPORT NSString * const kDesMonth ;
 FOUNDATION_EXPORT NSString * const kDesDay ;
 
-FOUNDATION_EXPORT NSString * const kItem_obj ;
-FOUNDATION_EXPORT NSString * const kItem_objSeleted ;
-FOUNDATION_EXPORT NSString * const kItem_block ;
+FOUNDATION_EXPORT NSString * const kItemObj ;
+FOUNDATION_EXPORT NSString * const kItemObjSeleted ;
+FOUNDATION_EXPORT NSString * const kItemBlock ;
 
-FOUNDATION_EXPORT NSString * const kItem_title ;
-FOUNDATION_EXPORT NSString * const kItem_titleColor ;
-FOUNDATION_EXPORT NSString * const kItem_textField ;
+FOUNDATION_EXPORT NSString * const kItemTitle ;
+FOUNDATION_EXPORT NSString * const kItemTitleColor ;
+FOUNDATION_EXPORT NSString * const kItemTextField ;
 
-FOUNDATION_EXPORT NSString * const kItem_titleSub ;
-FOUNDATION_EXPORT NSString * const kItem_titleSubColor ;
-FOUNDATION_EXPORT NSString * const kItem_titleSection ;
+FOUNDATION_EXPORT NSString * const kItemTitleSub ;
+FOUNDATION_EXPORT NSString * const kItemTitleSubColor ;
+FOUNDATION_EXPORT NSString * const kItemTitleSection ;
 
-FOUNDATION_EXPORT NSString * const kItem_image ;
-FOUNDATION_EXPORT NSString * const kItem_image_H ;
+FOUNDATION_EXPORT NSString * const kItemImage ;
+FOUNDATION_EXPORT NSString * const kItemImage_H ;
 
-FOUNDATION_EXPORT NSString * const kItem_controller ;
-FOUNDATION_EXPORT NSString * const kItem_controllerTitle ;
+FOUNDATION_EXPORT NSString * const kItemController ;
+FOUNDATION_EXPORT NSString * const kItemControllerTitle ;
 
-FOUNDATION_EXPORT NSString * const kItem_height ;
-FOUNDATION_EXPORT NSString * const kItem_dataList ;
-FOUNDATION_EXPORT NSString * const kItem_finished ;
+FOUNDATION_EXPORT NSString * const kItemHeight ;
+FOUNDATION_EXPORT NSString * const kItemDataList ;
+FOUNDATION_EXPORT NSString * const kItemFinished ;
 
-FOUNDATION_EXPORT NSString * const kItem_header ;
-FOUNDATION_EXPORT NSString * const kItem_footer ;
+FOUNDATION_EXPORT NSString * const kItemHeader ;
+FOUNDATION_EXPORT NSString * const kItemFooter ;
 /**
  推送通知
  */
-FOUNDATION_EXPORT NSString * const kNoti_title ;
-FOUNDATION_EXPORT NSString * const kNoti_subtitle ;
-FOUNDATION_EXPORT NSString * const kNoti_body ;
-FOUNDATION_EXPORT NSString * const kNoti_badge ;
+FOUNDATION_EXPORT NSString * const kNotiTitle ;
+FOUNDATION_EXPORT NSString * const kNotiSubtitle ;
+FOUNDATION_EXPORT NSString * const kNotiBody ;
+FOUNDATION_EXPORT NSString * const kNotiBadge ;
 
 
 /**
  通知
  */
-FOUNDATION_EXPORT NSString * const kNotiPostNameLogIn ;
-FOUNDATION_EXPORT NSString * const kNotiPostNameLogOut ;
-FOUNDATION_EXPORT NSString * const kNotiPostNameBackgroudUploadLocation  ;
+FOUNDATION_EXPORT NSString * const kNotiNameLogIn ;
+FOUNDATION_EXPORT NSString * const kNotiNameLogOut ;
+FOUNDATION_EXPORT NSString * const kNotiNameBackgroudUploadLocation  ;
 
 @interface NNGeneralConst : NSObject
 

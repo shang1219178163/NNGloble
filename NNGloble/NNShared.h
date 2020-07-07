@@ -16,10 +16,10 @@
 
 
 //.h头文件中的单例宏
-#define BNSingletonH(name) + (instancetype)shared;
+#define NNSingletonH(name) + (instancetype)shared;
 
 //.m文件中的单例宏
-#define BNSingletonM(name) \
+#define NNSingletonM(name) \
 static id _instance;\
 + (instancetype)allocWithZone:(struct _NSZone *)zone{\
     static dispatch_once_t onceToken;\
