@@ -7,12 +7,12 @@
 //    
 
 #import <UIKit/UIKit.h>
-
-FOUNDATION_EXPORT NSString *const kRadio_title ;
-FOUNDATION_EXPORT NSString *const kRadio_textColorH ;
-FOUNDATION_EXPORT NSString *const kRadio_textColorN ;
-FOUNDATION_EXPORT NSString *const kRadio_imageH ;
-FOUNDATION_EXPORT NSString *const kRadio_imageN ;
+ 
+FOUNDATION_EXPORT NSString *const kRadioTitle ;
+FOUNDATION_EXPORT NSString *const kRadioTextColorH ;
+FOUNDATION_EXPORT NSString *const kRadioTextColorN ;
+FOUNDATION_EXPORT NSString *const kRadioImageH ;
+FOUNDATION_EXPORT NSString *const kRadioImageN ;
  
 @interface NNRadioView : UIView
 

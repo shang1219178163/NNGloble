@@ -8,14 +8,13 @@
 //
 
 #import "NNRadioView.h"
-
 #import <NNGloble/NNGloble.h>
 
-NSString *const kRadio_title = @"kRadio_title";
-NSString *const kRadio_textColorH = @"kRadio_textColorH";
-NSString *const kRadio_textColorN = @"kRadio_textColorN";
-NSString *const kRadio_imageH = @"kRadio_imageH";
-NSString *const kRadio_imageN = @"kRadio_imageN";
+NSString *const kRadioTitle = @"kRadioTitle";
+NSString *const kRadioTextColorH = @"kRadioTextColorH";
+NSString *const kRadioTextColorN = @"kRadioTextColorN";
+NSString *const kRadioImageH = @"kRadioImageH";
+NSString *const kRadioImageN = @"kRadioImageN";
 
 @interface NNRadioView ()
 
@@ -36,21 +35,21 @@ NSString *const kRadio_imageN = @"kRadio_imageN";
         _attDict = attDict;
         
         self.imageView.frame = CGRectEqualToRect(frame, CGRectZero) ? CGRectMake(0, 0, 30, 30) : CGRectMake(0, 0, CGRectGetHeight(frame), CGRectGetHeight(frame));
-        self.imageView.image = isSelected  ? [UIImage imageNamed:attDict[kRadio_imageH]] : [UIImage imageNamed:attDict[kRadio_imageN]];
+        self.imageView.image = isSelected  ? [UIImage imageNamed:attDict[kRadioImageH]] : [UIImage imageNamed:attDict[kRadioImageN]];
         
         [self addSubview:self.imageView];
         
 //        NSBundle *resource_bundle = NSBundleFromParams(self.class, @"NNGloble");
-//        UIImage * imageH = [UIImage imageNamed:attDict[kRadio_imageH] inBundle:resource_bundle compatibleWithTraitCollection:nil];
-//        UIImage * imageN = [UIImage imageNamed:attDict[kRadio_imageN] inBundle:resource_bundle compatibleWithTraitCollection:nil];
+//        UIImage * imageH = [UIImage imageNamed:attDict[kRadioImageH] inBundle:resource_bundle compatibleWithTraitCollection:nil];
+//        UIImage * imageN = [UIImage imageNamed:attDict[kRadioImageN] inBundle:resource_bundle compatibleWithTraitCollection:nil];
 //
 //        self.imgList = @[imageN,imageH];
 //        self.imageView.image = isSelected  ? imageH : imageN;
         
         self.label.frame = CGRectMake(CGRectGetMaxX(self.imageView.frame) + kPadding, 0, CGRectGetWidth(frame) - CGRectGetMaxX(self.imageView.frame) - kPadding, CGRectGetHeight(frame));
-        self.label.text = attDict[kRadio_title];
-        if (attDict[kRadio_textColorH] && attDict[kRadio_textColorN]) {
-            self.label.textColor = isSelected  ? attDict[kRadio_textColorH] : attDict[kRadio_textColorN];
+        self.label.text = attDict[kRadioTitle];
+        if (attDict[kRadioTextColorH] && attDict[kRadioTextColorN]) {
+            self.label.textColor = isSelected  ? attDict[kRadioTextColorH] : attDict[kRadioTextColorN];
 
         }
         [self addSubview:self.label];
@@ -81,14 +80,14 @@ NSString *const kRadio_imageN = @"kRadio_imageN";
 -(void)setIsSelected:(BOOL)isSelected{
     _isSelected = isSelected;
     
-    self.imageView.image = isSelected  ? [UIImage imageNamed:_attDict[kRadio_imageH]] : [UIImage imageNamed:_attDict[kRadio_imageN]];
+    self.imageView.image = isSelected  ? [UIImage imageNamed:_attDict[kRadioImageH]] : [UIImage imageNamed:_attDict[kRadioImageN]];
 
-    if (_attDict[kRadio_textColorH]) {
-        if (_attDict[kRadio_textColorN]) {
-            self.label.textColor = isSelected  ? _attDict[kRadio_textColorH] : _attDict[kRadio_textColorN];
+    if (_attDict[kRadioTextColorH]) {
+        if (_attDict[kRadioTextColorN]) {
+            self.label.textColor = isSelected  ? _attDict[kRadioTextColorH] : _attDict[kRadioTextColorN];
             
         } else {
-            self.label.textColor = isSelected  ? _attDict[kRadio_textColorH] : UIColor.blackColor;
+            self.label.textColor = isSelected  ? _attDict[kRadioTextColorH] : UIColor.blackColor;
 
         }
     }
