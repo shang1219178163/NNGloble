@@ -63,11 +63,11 @@ FOUNDATION_EXPORT NSString * const kArrsUnionList ;
 
 #pragma mark - -File
 
-FOUNDATION_EXPORT const NSInteger kPageSize ;
-FOUNDATION_EXPORT const NSInteger kFileSize_image ;
+FOUNDATION_EXPORT const NSInteger kPageCount ;
+FOUNDATION_EXPORT const NSInteger kImageMaxSize ;
 
 //plist文件路径
-FOUNDATION_EXPORT NSString * const kPlistFilePath ;
+FOUNDATION_EXPORT NSString * const kPlistFilePath ; 
 
 #pragma mark - -kTag
 
@@ -89,14 +89,13 @@ FOUNDATION_EXPORT const NSInteger kTAG_VIEW_Segment ;
 FOUNDATION_EXPORT const NSInteger kTAG_VIEW_RADIO ;
 FOUNDATION_EXPORT const NSInteger kTAG_VIEW_Picture ;
 
-FOUNDATION_EXPORT const NSInteger kTAG_UITableViewCell ;
-
+FOUNDATION_EXPORT const NSInteger kTAG_TableViewCell ;
 FOUNDATION_EXPORT const NSInteger kTAG_ICAROUSEL ;
 FOUNDATION_EXPORT const NSInteger kTAG_PAGE_CONTROL ;
 
-FOUNDATION_EXPORT const NSInteger kComponent_0 ;
-FOUNDATION_EXPORT const NSInteger kComponent_1 ;
-FOUNDATION_EXPORT const NSInteger kComponent_2 ;
+FOUNDATION_EXPORT const NSInteger kComponent0 ;
+FOUNDATION_EXPORT const NSInteger kComponent1 ;
+FOUNDATION_EXPORT const NSInteger kComponent2 ;
 
 
 #pragma mark - -MacroGeometry与计算有关的尺寸属性
@@ -115,8 +114,8 @@ FOUNDATION_EXPORT const CGFloat kH_SegmentControl;
 FOUNDATION_EXPORT const CGFloat kH_searchBar;
 FOUNDATION_EXPORT const CGFloat kH_searchBarBackgroud;
 
-FOUNDATION_EXPORT const CGFloat kH_topView;
-FOUNDATION_EXPORT const CGFloat kH_slideView;
+FOUNDATION_EXPORT const CGFloat kH_TopView;
+FOUNDATION_EXPORT const CGFloat kH_SlideView;
 FOUNDATION_EXPORT const CGFloat kH_CellHeight ;
 
 FOUNDATION_EXPORT const CGFloat kX_GAP ;
@@ -132,8 +131,8 @@ FOUNDATION_EXPORT const CGFloat kDurationShow;
 FOUNDATION_EXPORT const CGFloat kDurationToast ;
 FOUNDATION_EXPORT const CGFloat kDurationDrop ;
 
-FOUNDATION_EXPORT const CGFloat kW_item ;
-FOUNDATION_EXPORT const CGFloat kW_progressView ;
+FOUNDATION_EXPORT const CGFloat kW_Item ;
+FOUNDATION_EXPORT const CGFloat kW_ProgressView ;
 
 FOUNDATION_EXPORT const CGFloat kH_LABEL ;
 FOUNDATION_EXPORT const CGFloat kH_LABEL_TITLE ;
@@ -238,7 +237,7 @@ FOUNDATION_EXPORT NSString * const kBlankTwo ;
 /// 空格(4个字体)
 FOUNDATION_EXPORT NSString * const kBlankFour ;
 
-#pragma mark - - 通用
+#pragma mark - -通用
 
 FOUNDATION_EXPORT NSString * const kDesWeek ;
 FOUNDATION_EXPORT NSString * const kDesMonth ;

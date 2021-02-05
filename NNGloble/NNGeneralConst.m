@@ -39,15 +39,15 @@ NSString * const kArrLowerList      = @"lowercaseString";//大小写转换
 NSString * const kArrsUnionDistList = @"@distinctUnionOfArrays.self";//数组内部去重
 NSString * const kArrsUnionList     = @"@unionOfArrays.self";
 
-#pragma mark - - File
+#pragma mark - -Size
 
-const NSInteger kPageSize          = 20;
-const NSInteger kFileSize_image    = 1*1024*1024;
+const NSInteger kPageCount          = 20;
+const NSInteger kImageMaxSize       = 1*1024*1024;
 
 //plist文件路径
 NSString * const kPlistFilePath    = @"/Library/File_Plist/";
 
-#pragma mark - - kTag
+#pragma mark - -kTag
 
 const NSInteger kTAG_LABEL           = 100;
 const NSInteger kTAG_BTN             = 200;
@@ -67,14 +67,13 @@ const NSInteger kTAG_VIEW_Segment    = 1100;
 const NSInteger kTAG_VIEW_RADIO      = 1200;
 const NSInteger kTAG_VIEW_Picture    = 1300;
 
-const NSInteger kTAG_UITableViewCell = 1500;
-
+const NSInteger kTAG_TableViewCell   = 1500;
 const NSInteger kTAG_ICAROUSEL       = 950;
 const NSInteger kTAG_PAGE_CONTROL    = 951;
 
-const NSInteger kComponent_0         = 0 ;
-const NSInteger kComponent_1         = 1 ;
-const NSInteger kComponent_2         = 2 ;
+const NSInteger kComponent0         = 0 ;
+const NSInteger kComponent1         = 1 ;
+const NSInteger kComponent2         = 2 ;
 
 #pragma mark - -MacroGeometry与计算有关的尺寸属性
 
@@ -89,8 +88,8 @@ const CGFloat kH_SegmentControl     = 44;
 const CGFloat kH_searchBar          = 36;
 const CGFloat kH_searchBarBackgroud = 56;
 
-const CGFloat kH_topView            = 49;//itemsView高度
-const CGFloat kH_slideView          = 5;//指示器高度
+const CGFloat kH_TopView            = 49;//itemsView高度
+const CGFloat kH_SlideView          = 5;//指示器高度
 const CGFloat kH_CellHeight         = 60;
 
 const CGFloat kX_GAP                = 15;
@@ -107,8 +106,8 @@ const CGFloat kDurationShow         = 0.3;
 const CGFloat kDurationDrop         = 0.5;
 const CGFloat kDurationToast        = 1.0;
 
-const CGFloat kW_item               = 80;
-const CGFloat kW_progressView       = 130;
+const CGFloat kW_Item               = 80;
+const CGFloat kW_ProgressView       = 130;
 
 const CGFloat kH_LABEL              = 25;
 const CGFloat kH_LABEL_TITLE        = 30;

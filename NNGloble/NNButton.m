@@ -8,14 +8,29 @@
 
 #import "NNButton.h"
 
+@interface NNButton()
+
+@property (nonatomic, strong, readwrite) NSMutableDictionary<NSNumber *, UIColor *> *borderColorDic;
+@property (nonatomic, strong, readwrite) NSMutableDictionary<NSNumber *, NSNumber *> *borderWidthDic;
+@property (nonatomic, strong, readwrite) NSMutableDictionary<NSNumber *, NSNumber *> *cornerRadiusDic;
+
+@end
+
+
 @implementation NNButton
+
+- (void)dealloc{
+    [self removeObserver:self forKeyPath:@"selected"];
+    [self removeObserver:self forKeyPath:@"highlighted"];
+}
 
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
         _iconSize = CGSizeMake(60, 18);
+        _iconOffset = UIOffsetZero;
         _labelHeight = 25;
-        _spacing = 5;
+        _spacing = 3;
         
         _direction = NNButtonDirectionLeft;
         _iconLocation = NNButtonLocationNone;
@@ -28,6 +43,8 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
+    self.iconBtn.tag = self.tag;
+
     if (CGRectGetHeight(self.bounds) <= 10) {
         return;
     }
@@ -60,8 +77,8 @@
         {
             self.imageView.frame = CGRectMake(width - height, 0, height, height);
             self.titleLabel.frame = CGRectMake(0,
-                                               0,
-                                               width - height - self.spacing,
+                                               self.spacing,
+                                               width - height - self.spacing*2,
                                                height);
         }
             break;
@@ -69,8 +86,8 @@
         {
             self.imageView.frame = CGRectMake(0, 0, height, height);
             self.titleLabel.frame = CGRectMake(CGRectGetMaxY(self.imageView.frame) + self.spacing,
-                                               0,
-                                               width - CGRectGetWidth(self.imageView.frame) - self.spacing,
+                                               self.spacing,
+                                               width - CGRectGetWidth(self.imageView.frame) - self.spacing*2,
                                                height);
         }
             break;
@@ -117,7 +134,8 @@
         self.imageView.frame = self.bounds;
     }
     
-    bool invalid = !self.iconBtn.currentImage && !self.iconBtn.currentTitle &&[self.iconBtn backgroundImageForState:UIControlStateNormal];
+    UIImage *backgroundImage = [self.iconBtn backgroundImageForState:UIControlStateNormal];
+    bool invalid = !self.iconBtn.currentImage && !self.iconBtn.currentTitle && !backgroundImage;
     if (!self.iconBtn.isHidden && invalid) {
         self.iconBtn.hidden = false;
     }
@@ -148,7 +166,6 @@
 
 - (void)setupUI {
     [self addSubview:self.iconBtn];
-    self.iconBtn.tag = self.tag;
 
     UIColor *textColor = [UIColor.blackColor colorWithAlphaComponent:0.3];
     UIColor *textColorH = UIColor.systemBlueColor;
@@ -160,8 +177,103 @@
     
 //    self.imageView.tintColor = UIColor.themeColor;
     self.imageView.tintColor = textColorH;
-
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    [self addObserver:self forKeyPath:@"selected" options:NSKeyValueObservingOptionNew context:nil];
+    [self addObserver:self forKeyPath:@"highlighted" options:NSKeyValueObservingOptionNew context:nil];
+}
+
+#pragma mark -observe
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
+    if ([object isKindOfClass:[NNButton class]]) {
+        NNButton *sender = (NNButton *)object;
+        if ([keyPath isEqualToString:@"selected"] || [keyPath isEqualToString:@"highlighted"]) {
+            [sender changeLayerBorderColor];
+            [sender changeLayerBorderWidth];
+            [sender changeLayerCornerRadius];
+            if (sender.observerBlock) {
+                sender.observerBlock(keyPath, sender, change);
+            }
+        }
+    } else {
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
+}
+
+#pragma mark -public
+
+- (void)setBorderColor:(nullable UIColor *)color forState:(UIControlState)state{
+    if (!color) {
+        return;
+    }
+    self.borderColorDic[@(state)] = color;
+    [self changeLayerBorderColor];
+}
+
+- (nullable UIColor *)borderColorForState:(UIControlState)state{
+    return self.borderColorDic[@(state)];
+}
+
+- (void)setBorderWidth:(CGFloat)value forState:(UIControlState)state{
+    self.borderWidthDic[@(state)] = @(value);
+    [self changeLayerBorderWidth];
+}
+
+- (CGFloat)borderWidthForState:(UIControlState)state{
+    return self.borderWidthDic[@(state)].floatValue;
+}
+
+- (void)setCornerRadius:(CGFloat)value forState:(UIControlState)state{
+    self.cornerRadiusDic[@(state)] = @(value);
+    [self changeLayerCornerRadius];
+}
+
+- (CGFloat)cornerRadiusForState:(UIControlState)state{
+    return self.cornerRadiusDic[@(state)].floatValue;
+}
+
+#pragma mark -private
+
+- (void)changeLayerBorderColor{
+    UIColor *normalColor = self.borderColorDic[@(UIControlStateNormal)];
+    if (!normalColor) {
+        return;
+    }
+
+    UIColor *color = self.borderColorDic[@(self.state)] ? : normalColor;
+    self.layer.borderColor = color.CGColor;
+    
+    if (self.layer.borderWidth == 0) {
+        self.layer.borderWidth = 1;
+    }
+}
+
+- (void)changeLayerBorderWidth{
+    NSNumber *normalValue = self.borderWidthDic[@(UIControlStateNormal)];
+    if (!normalValue) {
+        return;
+    }
+    
+    NSNumber *numer = self.borderWidthDic[@(self.state)] ? : normalValue;
+    self.layer.borderWidth = numer.floatValue;
+    
+    if (self.layer.borderWidth == 0) {
+        self.layer.borderWidth = 1;
+    }
+}
+
+- (void)changeLayerCornerRadius{
+    NSNumber *normalValue = self.cornerRadiusDic[@(UIControlStateNormal)];
+    if (!normalValue) {
+        return;
+    }
+    
+    NSNumber *numer = self.cornerRadiusDic[@(self.state)] ? : normalValue;
+    self.layer.cornerRadius = numer.floatValue;
+    
+    if (self.layer.borderWidth == 0) {
+        self.layer.borderWidth = 1;
+    }
 }
 
 #pragma mark -lazy
@@ -174,6 +286,33 @@
         _iconBtn.titleLabel.font = [UIFont systemFontOfSize:12];
     }
     return _iconBtn;
+}
+
+- (NSMutableDictionary<NSNumber *,UIColor *> *)borderColorDic{
+    if (!_borderColorDic) {
+        _borderColorDic = @{
+            
+        }.mutableCopy;
+    }
+    return _borderColorDic;
+}
+
+- (NSMutableDictionary<NSNumber *, NSNumber *> *)borderWidthDic{
+    if (!_borderWidthDic) {
+        _borderWidthDic = @{
+            
+        }.mutableCopy;
+    }
+    return _borderWidthDic;
+}
+
+- (NSMutableDictionary<NSNumber *, NSNumber *> *)cornerRadiusDic{
+    if (!_cornerRadiusDic) {
+        _cornerRadiusDic = @{
+            
+        }.mutableCopy;
+    }
+    return _cornerRadiusDic;
 }
 
 @end

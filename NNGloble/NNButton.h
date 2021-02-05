@@ -32,12 +32,24 @@ typedef NS_ENUM(NSUInteger, NNButtonLocation) {
 @property (nonatomic, assign) NNButtonDirection direction;
 @property (nonatomic, assign) NNButtonLocation iconLocation;
 
+@property (nonatomic, assign) CGSize iconSize;
 @property (nonatomic, assign) UIOffset iconOffset;
 @property (nonatomic, assign) CGFloat eventInsetDX;
 @property (nonatomic, assign) CGFloat eventInsetDY;
-@property (nonatomic, assign) CGSize iconSize;
 @property (nonatomic, assign) CGFloat labelHeight;
 @property (nonatomic, assign) CGFloat spacing;
+
+///addObserver(self, forKeyPath: "selected", options: .new, context: nil)
+@property (nonatomic, copy) void(^observerBlock)(NSString *keyPath, NNButton *object, NSDictionary *change);
+
+- (void)setBorderColor:(nullable UIColor *)color forState:(UIControlState)state;
+- (nullable UIColor *)borderColorForState:(UIControlState)state;
+
+- (void)setBorderWidth:(CGFloat)value forState:(UIControlState)state;
+- (CGFloat)borderWidthForState:(UIControlState)state;
+    
+- (void)setCornerRadius:(CGFloat)value forState:(UIControlState)state;
+- (CGFloat)cornerRadiusForState:(UIControlState)state;
 
 @end
 
