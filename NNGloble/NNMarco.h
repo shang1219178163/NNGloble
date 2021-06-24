@@ -12,23 +12,10 @@
 #pragma mark - -NNMarco通用
 
 #ifdef DEBUG
-//#define DDLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __LINE__, __PRETTY_FUNCTION__, ##__VA_ARGS__);
-
-#define DDLog(FORMAT, ...) {\
-NSString *formatStr = @"yyyy-MM-dd HH:mm:ss.SSSSSSZ";\
-NSMutableDictionary *threadDic = NSThread.currentThread.threadDictionary;\
-NSDateFormatter *formatter = [threadDic objectForKey:formatStr];\
-if (!formatter) {\
-formatter = [[NSDateFormatter alloc]init];\
-formatter.dateFormat = formatStr;\
-formatter.locale = [NSLocale currentLocale];\
-formatter.timeZone = [NSTimeZone systemTimeZone];\
-[threadDic setObject:formatter forKey:formatStr];\
-}\
-NSString *str = [formatter stringFromDate:[NSDate date]];\
-fprintf(stderr,"%s【line -%d】%s %s \n", [str UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);\
-}
-
+#define DDLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+//#define DDLog(args, ...) {\
+//fprintf(stderr, "%s %s %s【line -%d】%s\n", __DATE__, __TIME__, __PRETTY_FUNCTION__, __LINE__, [[NSString stringWithFormat:args, ##__VA_ARGS__] UTF8String]);\
+//}
 #else
 #define DDLog(...)
 #endif

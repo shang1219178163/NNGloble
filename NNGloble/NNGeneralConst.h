@@ -152,44 +152,6 @@ FOUNDATION_EXPORT const CGFloat kFontSize10 ;
 
 #pragma mark - -视图
 
-FOUNDATION_EXPORT NSString * const kIMG_arrowRight ;
-FOUNDATION_EXPORT NSString * const kIMG_arrowDown ;
-FOUNDATION_EXPORT NSString * const kIMG_arrowBack ;
-FOUNDATION_EXPORT NSString * const kIMG_arrowUp ;
-
-FOUNDATION_EXPORT NSString * const kIMG_portrait ;
-FOUNDATION_EXPORT NSString * const kIMG_portrait_N ;
-FOUNDATION_EXPORT NSString * const kIMG_portrait_H ;
-FOUNDATION_EXPORT NSString * const kIMG_pictureAdd ;
-FOUNDATION_EXPORT NSString * const kIMG_pictureDelete ;
-
-FOUNDATION_EXPORT NSString * const kIMG_defaultFailed ;
-FOUNDATION_EXPORT NSString * const kIMG_defaultFailed_S ;
-
-FOUNDATION_EXPORT NSString * const kIMG_sexBoy ;
-FOUNDATION_EXPORT NSString * const kIMG_sexGril ;
-
-FOUNDATION_EXPORT NSString * const kIMG_elemetDec ;
-FOUNDATION_EXPORT NSString * const kIMG_elemetInc ;
-
-FOUNDATION_EXPORT NSString * const kIMG_scan ;
-FOUNDATION_EXPORT NSString * const kIMG_NFC ;
-
-FOUNDATION_EXPORT NSString * const kIMG_inquiry ;
-FOUNDATION_EXPORT NSString * const kIMG_update ;
-FOUNDATION_EXPORT NSString * const kIMG_warning ;
-
-FOUNDATION_EXPORT NSString * const kIMG_notice ;
-FOUNDATION_EXPORT NSString * const kIMG_location_H ;
-FOUNDATION_EXPORT NSString * const kIMG_more ;
-
-FOUNDATION_EXPORT NSString * const kIMG_selected_NO ;
-FOUNDATION_EXPORT NSString * const kIMG_selected_YES ;
-FOUNDATION_EXPORT NSString * const kIMG_Add ;
-
-FOUNDATION_EXPORT NSString * const kIMG_like_H ;
-FOUNDATION_EXPORT NSString * const kIMG_like_W ;
-
 FOUNDATION_EXPORT NSString * const kNetWorkRequesting ;
 FOUNDATION_EXPORT NSString * const kNetWorkFailed ;
 FOUNDATION_EXPORT NSString * const kNetWorkNodata ;

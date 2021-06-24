@@ -71,9 +71,9 @@ const NSInteger kTAG_TableViewCell   = 1500;
 const NSInteger kTAG_ICAROUSEL       = 950;
 const NSInteger kTAG_PAGE_CONTROL    = 951;
 
-const NSInteger kComponent0         = 0 ;
-const NSInteger kComponent1         = 1 ;
-const NSInteger kComponent2         = 2 ;
+const NSInteger kComponent0         = 0;
+const NSInteger kComponent1         = 1;
+const NSInteger kComponent2         = 2;
 
 #pragma mark - -MacroGeometry与计算有关的尺寸属性
 
@@ -120,51 +120,13 @@ const CGFloat kW_LINE_Vert          = 3.0;
 
 #pragma mark - -font
 
-const CGFloat kFontSize18 =  18;
-const CGFloat kFontSize16 =  16;
-const CGFloat kFontSize14 =  14;
-const CGFloat kFontSize12 =  12;
-const CGFloat kFontSize10 =  10;
+const CGFloat kFontSize18 = 18;
+const CGFloat kFontSize16 = 16;
+const CGFloat kFontSize14 = 14;
+const CGFloat kFontSize12 = 12;
+const CGFloat kFontSize10 = 10;
 
 #pragma mark - -视图
-
-NSString * const kIMG_arrowRight       = @"img_arrowRight_gray";
-NSString * const kIMG_arrowDown        = @"img_arrowDown_black";
-NSString * const kIMG_arrowBack        = @"img_arrowLeft_white";
-NSString * const kIMG_arrowUp          = @"img_arrowUp_blue";
-
-NSString * const kIMG_portrait         = @"img_portrait_N";
-NSString * const kIMG_portrait_N       = @"img_portrait_N";
-NSString * const kIMG_portrait_H       = @"img_portrait_H";
-NSString * const kIMG_pictureAdd       = @"img_pictureAdd";
-NSString * const kIMG_pictureDelete    = @"img_pictureDelete";
-
-NSString * const kIMG_defaultFailed    = @"img_failedDefault";
-NSString * const kIMG_defaultFailed_S  = @"img_failedDefault_S";
-
-NSString * const kIMG_sexBoy           = @"img_sex_boy";
-NSString * const kIMG_sexGril          = @"img_sex_gril";
-
-NSString * const kIMG_elemetDec        = @"img_elemet_decrease";
-NSString * const kIMG_elemetInc        = @"img_elemet_increase";
-
-NSString * const kIMG_scan             = @"img_scan";
-NSString * const kIMG_NFC              = @"img_NFC";
-
-NSString * const kIMG_inquiry          = @"img_dialog_inquiry";
-NSString * const kIMG_update           = @"img_dialog_update";
-NSString * const kIMG_warning          = @"img_dialog_warning";
-
-NSString * const kIMG_notice           = @"img_notice";
-NSString * const kIMG_location_H       = @"img_location_H";
-NSString * const kIMG_more             = @"img_more";
-
-NSString * const kIMG_selected_NO      = @"btn_selected_NO";
-NSString * const kIMG_selected_YES     = @"btn_selected_YES";
-NSString * const kIMG_Add              = @"btn_add";
-
-NSString * const kIMG_like_H           = @"img_like_H";
-NSString * const kIMG_like_W           = @"img_like_W";
 
 NSString * const kNetWorkRequesting    = @"网络请求中...";
 NSString * const kNetWorkFailed        = @"网络请求失败,请稍后再试";
@@ -227,7 +189,7 @@ NSString * const kItemDataList        = @"kItemDataList";
 NSString * const kItemFinished        = @"kItem_finish";
 
 NSString * const kItemHeader          = @"kItemHeader";
-NSString * const kItemFooter          =   @"kItemFooter";
+NSString * const kItemFooter          = @"kItemFooter";
 
 #pragma mark - -推送通知
 
